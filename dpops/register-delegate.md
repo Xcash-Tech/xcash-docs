@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-Once you have correctly [set up your instance](server-setup.md), installed the different programs, you can now register as a delegate of the X-Cash Public Network.  
+Once you have correctly [set up your instance](server-setup.md), installed the different programs, you can now register as a delegate of the X-Cash Public Network.\
 You will need to have all the services already running to generate the necessary parameters to register yourself as a delegate.
 
 ## 1. Register Yourself as a Delegate
@@ -21,13 +21,13 @@ Chose your delegate name wisely as you won't be able to change it down the line.
 
 First of all, the wallet service should be running in the background. Stop it by using the command:
 
-```text
+```
 systemctl stop xcash-rpc-wallet
 ```
 
 Open and let synchronize your wallet generated during the node installation, either when using the [auto-installer](node-installation.md#quick-installation) or [created manually](node-installation.md#generate-a-wallet).
 
-```text
+```
 ~/xcash-official/xcash-core/build/release/bin/xcash-wallet-cli --wallet-file ~/xcash-official/xcash-wallets/<WALLET_NAME>
 ```
 
@@ -39,19 +39,19 @@ If you installed with the auto-installer script, the wallet name will be **`dele
 
 Once your wallet is fully synchronized, you can use the **`delegate_register`** command with the following parameters:
 
-```text
+```
 delegate_register <delegate_name> <IP_address|domain_name> <block_verifier_public_key>
 ```
 
 And replace the information with:
 
 * **`<delegate_name>`**: the name that will be displayed on the delegate explorer. _Cannot be updated._
-* **`<IP_address|domain_name>`** : your server's IP address or its domain name \(if you have bought a domain name and correctly set up the DNS record\). It is recommended to register your delegate using your domain name, as you can redirect your server IP address to it easily in your DNS record, enabling you to change server in the future.  It is however possible to change this information at a later time. _Can be updated._
-* **`<block_verifier_public_key>`** : the block verifier public key that you have generated [earlier](register-delegate.md#1-generate-a-block-verifier-key). _Cannot be updated._ 
+* **`<IP_address|domain_name>`** : your server's IP address or its domain name (if you have bought a domain name and correctly set up the DNS record). It is recommended to register your delegate using your domain name, as you can redirect your server IP address to it easily in your DNS record, enabling you to change server in the future. It is however possible to change this information at a later time. _Can be updated._
+* **`<block_verifier_public_key>`** : the block verifier public key that you have generated [earlier](register-delegate.md#1-generate-a-block-verifier-key). _Cannot be updated._
 
 **Example:**
 
-```text
+```
 delegate_register my_delegate my_delegate.domain.com cf8718d638ce0a831f3538ea60d1e27c3a258c7004a1ad7c547cc5331de7d9d7
 ```
 
@@ -61,7 +61,7 @@ You can check in the [delegates explorer](http://delegates.xcash.foundation/) if
 
 You can **`exit`** the wallet, and restart the wallet service:
 
-```text
+```
 systemctl restart xcash-rpc-wallet
 ```
 
@@ -71,13 +71,13 @@ Each registered delegates will be displayed in the [delegates explorer](http://d
 
 First of all, the wallet service should be running in the background. Stop it by using the command:
 
-```text
+```
 systemctl stop xcash-rpc-wallet
 ```
 
 Open and let synchronize the wallet you used to register as a delegate, either when using the [auto-installer](node-installation.md#quick-installation) or [created manually](node-installation.md#generate-a-wallet).
 
-```text
+```
 ~/xcash-official/xcash-core/build/release/bin/xcash-wallet-cli --wallet-file ~/xcash-official/xcash-wallets/<WALLET_NAME>
 ```
 
@@ -89,126 +89,27 @@ If you installed with the autoinstaller script, the wallet name will be **`deleg
 
 Once your wallet is fully synchronized, you can use the **`delegate_update`** command with the following parameters:
 
-```text
+```
 delegate_update <item> <value>
 ```
 
 Replace the `<item>` with one of the lists below, and change the corresponding `<value>`
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Item</th>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><code>about</code>
-      </td>
-      <td style="text-align:left"><b>String</b>  <em>(1024 char. max.)</em>
-      </td>
-      <td style="text-align:left">
-        <p>Short description about you and your motivations as a delegate.</p>
-        <p><b>Example:</b>
-        </p>
-        <p><code>delegate_update about Even the smallest delegate can change the course of the future.</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>IP_address</code>
-      </td>
-      <td style="text-align:left"><b>String </b><em>(255 char. max.)</em>
-      </td>
-      <td style="text-align:left">
-        <p>Update the IP address or domain name of your delegate node. Must be in
-          IPV4 format</p>
-        <p><b>Example:</b>
-        </p>
-        <p><code>delegate_update IP_address mydomain.com </code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>website</code>
-      </td>
-      <td style="text-align:left"><b>String</b>  <em>(255 char. max.)</em>
-      </td>
-      <td style="text-align:left">
-        <p>Link to your landing page or website relating to your delegate information
-          and statistics.</p>
-        <p><b>Example:</b>
-        </p>
-        <p><code>delegate_update website my-delegate-website.com</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>team</code>
-      </td>
-      <td style="text-align:left"><b>String</b>  <em>(255 char. max.)</em>
-      </td>
-      <td style="text-align:left">
-        <p>In case of delegate node managed by several persons. Can be a team name,
-          names or GitHub profiles.</p>
-        <p><b>Example:</b>  <code>delegate_update team Manager: @tic | Treasury: @tac</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>shared_delegate_status</code>
-      </td>
-      <td style="text-align:left"><b>String </b><em>(255 char. max.)</em>
-      </td>
-      <td style="text-align:left">
-        <p><b>solo: </b>for a solo delegates.</p>
-        <p><b>shared</b>: for shared delegates. Shared delegates set up a fee and
-          redistribute a share of the reward to their voters.</p>
-        <p><b>group</b>: for private groups. Private groups works as shared but the
-          delegate decide how he/she going to distribute the votes. See how to set
-          it up <a href="register-delegate.md#3-private-group">below.</a>
-        </p>
-        <p><b>Example:</b>  <code>delegate_update shared_delegate_status group</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>delegate_fee</code>
-      </td>
-      <td style="text-align:left">
-        <p><b>Number</b>
-        </p>
-        <p><em>[0 - 100] with up to 6 decimals</em>
-        </p>
-      </td>
-      <td style="text-align:left">
-        <p>Fees (in percentage) taken by the shared delegate on the block reward.
-          Provide the fee you have used during the node installation.</p>
-        <p><b>Example:</b>  <code>delegate_update delegate_fee 12.354321</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><code>server_specs</code>
-      </td>
-      <td style="text-align:left"><b>String</b>  <em>(255 char. max.)</em>
-      </td>
-      <td style="text-align:left">
-        <p>A description of the servers&apos; specifications and hardware.</p>
-        <p><b>Example:</b>  <code>delegate_update server_specs Operating System = Ubuntu 20.04 - CPU = 6 threads (Intel E5-2630 v4 - 2.20GHz) - RAM = 16GB DDR4 - Hard drive = 400GB SSD - Bandwidth Transfer = Unlimited</code>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Item                     | Type                                                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `about`                  | String _(1024 char. max.)_                                   | <p>Short description about you and your motivations as a delegate.</p><p>Example:</p><p><code>delegate_update about Even the smallest delegate can change the course of the future.</code></p>                                                                                                                                                                                                                                                         |
+| `IP_address`             | String _(255 char. max.)_                                    | <p>Update the IP address or domain name of your delegate node. Must be in IPV4 format</p><p>Example:</p><p><code>delegate_update IP_address mydomain.com</code></p>                                                                                                                                                                                                                                                                                    |
+| `website`                | String _(255 char. max.)_                                    | <p>Link to your landing page or website relating to your delegate information and statistics.</p><p>Example:</p><p><code>delegate_update website my-delegate-website.com</code></p>                                                                                                                                                                                                                                                                    |
+| `team`                   | String _(255 char. max.)_                                    | <p>In case of delegate node managed by several persons. Can be a team name, names or GitHub profiles.</p><p>Example: <code>delegate_update team Manager: @tic | Treasury: @tac</code></p>                                                                                                                                                                                                                                                              |
+| `shared_delegate_status` | String _(255 char. max.)_                                    | <p>solo: for a solo delegates.</p><p>shared: for shared delegates. Shared delegates set up a fee and redistribute a share of the reward to their voters.</p><p>group: for private groups. Private groups works as shared but the delegate decide how he/she going to distribute the votes. See how to set it up <a href="register-delegate.md#3-private-group">below.</a></p><p>Example: <code>delegate_update shared_delegate_status group</code></p> |
+| `delegate_fee`           | <p>Number</p><p><em>[0 - 100] with up to 6 decimals</em></p> | <p>Fees (in percentage) taken by the shared delegate on the block reward. Provide the fee you have used during the node installation.</p><p>Example: <code>delegate_update delegate_fee 12.354321</code></p>                                                                                                                                                                                                                                           |
+| `server_specs`           | String _(255 char. max.)_                                    | <p>A description of the servers' specifications and hardware.</p><p>Example: <code>delegate_update server_specs Operating System = Ubuntu 20.04 - CPU = 6 threads (Intel E5-2630 v4 - 2.20GHz) - RAM = 16GB DDR4 - Hard drive = 400GB SSD - Bandwidth Transfer = Unlimited</code></p>                                                                                                                                                                  |
 
 You will be prompted to wait for the next valid data interval. Once your request has been accepted, you will receive the message **`The delegate info has been updated successfully`**.
 
 You can **`exit`** the wallet and restart the wallet service:
 
-```text
+```
 systemctl start xcash-rpc-wallet
 ```
 
@@ -242,7 +143,7 @@ The `voting-address` and `payment-address` can be the same.
 The maximum amount of `payment-address` that can be in the list is **100**.
 {% endhint %}
 
-Once the config file is ready, save it and close. You will need to update the `xcash-dpops.service` so it can get the configuration file. First, run the stop program option in the installer script: 
+Once the config file is ready, save it and close. You will need to update the `xcash-dpops.service` so it can get the configuration file. First, run the stop program option in the installer script:
 
 ```bash
 bash -c "$(curl -sSL https://raw.githubusercontent.com/X-CASH-official/xcash-dpops/master/scripts/autoinstaller/autoinstaller.sh)"
@@ -282,7 +183,6 @@ bash -c "$(curl -sSL https://raw.githubusercontent.com/X-CASH-official/xcash-dpo
 
 ## 4. Prepare shared delegate payments
 
-As a shared delegate \(normal or private group\), you will have to distribute a share of the block reward to your voters. On the first payment threshold, the program will automatically distribute the voters' share from the delegate wallet. However, the delegate wallet is empty at first and you might be missing some unspents to conveniently pay your voters.
+As a shared delegate (normal or private group), you will have to distribute a share of the block reward to your voters. On the first payment threshold, the program will automatically distribute the voters' share from the delegate wallet. However, the delegate wallet is empty at first and you might be missing some unspents to conveniently pay your voters.
 
 It is recommended to pre-fund your delegate wallet when first setting it up. **We recommend pre-funding between 500k to 1M XCASH** into the delegate wallet.
-

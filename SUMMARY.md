@@ -2,7 +2,7 @@
 
 * [Welcome 👋](README.md)
 
-## API <a id="api"></a>
+## API
 
 * [Get Started](api/get-started.md)
 * [Blockchain](api/blockchain.md)
@@ -10,10 +10,10 @@
 * [Namespace](api/namespace.md)
 * [X-Payment Twitter](api/xpayment-twitter.md)
 
-## Applications & Tools <a id="applications"></a>
+## Applications & Tools <a href="#applications" id="applications"></a>
 
 * [Interacting with the network](applications/xcashd.md)
-* [X-Cash Wallet \(CLI\)](applications/xcash-wallet-cli.md)
+* [X-Cash Wallet (CLI)](applications/xcash-wallet-cli.md)
 * [WXCASH](applications/wxcash.md)
 * [Export blockchain file](applications/xcash-blockchain-export.md)
 * [Import blockchain file](applications/xcash-blockchain-import.md)
@@ -23,9 +23,9 @@
     * [Namespace Wallet RPC calls](applications/rpc-calls/xcash-wallet-rpc/namespace-wallet-rpc-calls.md)
   * [xcash-daemon-rpc](applications/rpc-calls/json-rpc-methods/README.md)
     * [Other Daemon RPC Calls](applications/rpc-calls/json-rpc-methods/other-daemon-rpc-calls.md)
- * [Tools For Builders](applications/tools-for-builders.md)
+* [Tools For Builders](applications/tools-for-builders.md)
 
-## Delegate node & staking <a id="dpops"></a>
+## Delegate node & staking <a href="#dpops" id="dpops"></a>
 
 * [Get Started](dpops/get-started.md)
 * [Technical Design](dpops/yellowpaper-delagated-proof-of-private-stake.md)
@@ -35,7 +35,7 @@
 * [Management & Monitoring](dpops/management-and-monitoring.md)
 * [Vote & Staking](dpops/vote-and-staking.md)
 
-## XCASH Namespace (in development) <a id="remotedata"></a>
+## XCASH Namespace (in development) <a href="#remotedata" id="remotedata"></a>
 
 * [Get Started](remotedata/get-started.md)
 * [Register](remotedata/register.md)
@@ -43,7 +43,7 @@
 * [Manage](remotedata/manage.md)
 * [Delegate Management](remotedata/delegate-management.md)
 
-## XCASH Turbo Tx (in development) <a id="turbotx"></a>
+## XCASH Turbo Tx (in development) <a href="#turbotx" id="turbotx"></a>
 
 * [Get Started](turbotx/get-started.md)
 * [Introduction](turbotx/introduction.md)
@@ -56,6 +56,5 @@
 
 ## Archived
 
-* [DPOPS beta  V2](archived/dpops-beta.md)
+* [DPOPS beta V2](archived/dpops-beta.md)
 * [DPOPS Manual Installation](archived/dpops-manual-installation.md)
-
