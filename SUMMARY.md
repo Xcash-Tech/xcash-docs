@@ -8,8 +8,6 @@
 * [Blockchain](api/blockchain.md)
 * [DPOPS](api/dpops.md)
 
-* [X-Payment Twitter](api/xpayment-twitter.md)
-
 ## Applications & Tools <a href="#applications" id="applications"></a>
 
 * [Interacting with the network](applications/xcashd.md)
@@ -38,8 +36,3 @@
 ## Library
 
 * [Yellowpaper - Hybrid Transactions](library/yellowpaper-hybrid-transactions.md)
-
-## Archived
-
-* [DPOPS beta V2](archived/dpops-beta.md)
-* [DPOPS Manual Installation](archived/dpops-manual-installation.md)
