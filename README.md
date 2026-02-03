@@ -134,13 +134,9 @@ Use the table below to jump straight to what you need.
 | What are you looking for? | Where to start |
 | :--- | :--- |
 | **I need to migrate legacy XCASH / WXCASH.** | Use the official [migration guide](https://xcash.tech/migration) |
-| **I want to use a wallet.** | Web wallet: [xwallet.xcash.tech](https://xwallet.xcash.tech) • CLI wallet docs: [applications/xcash-wallet-cli.md](applications/xcash-wallet-cli.md) |
-| **I want to connect to the network and run a node.** | Daemon documentation: [applications/xcashd.md](applications/xcashd.md) |
-| **I want to stake / vote.** | Start here: [dpops/vote-and-staking.md](dpops/vote-and-staking.md) |
-| **I want to become a delegate.** | Delegate guides: [dpops/get-started.md](dpops/get-started.md) and [dpops/server-setup.md](dpops/server-setup.md) |
+| **I want to use a wallet.** | <ul><li>Web wallet: [xwallet.xcash.tech](https://xwallet.xcash.tech)</li><li>Android wallet: [Android 10+](https://github.com/Xcash-Tech/xcash-cake-wallet-legacy/releases)</li><li>[CLI wallet docs](applications/xcash-wallet-cli.md)</li></ul> |
 | **I want to use RPC (wallet/daemon).** | RPC index: [applications/rpc-calls/README.md](applications/rpc-calls/README.md) |
 | **I want to import/export a blockchain file.** | [applications/xcash-blockchain-export.md](applications/xcash-blockchain-export.md) and [applications/xcash-blockchain-import.md](applications/xcash-blockchain-import.md) |
-| **I’m building and need API references.** | API section: [api/get-started.md](api/get-started.md) |
 
 Tip: the full documentation navigation is in [SUMMARY.md](SUMMARY.md).
 
