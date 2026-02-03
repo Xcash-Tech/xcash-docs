@@ -37,29 +37,14 @@ Looking to use X-Cash but don't know where to start? Check our list of quick gui
 #### General links
 
 * [**X-Cash website** ](https://xcash.tech)- The official website of the X-Cash project.
-* [**X-Cash official blog**](https://medium.com/x-cash) - Read about the latest development of X-Cash
-* [**X-Cash explorer** ](https://explorer.xcash.tech/Explorer)- See your ongoing transactions and explorer the X-CASH blockchain.
+* [**X-Cash official blog**](https://medium.com/@xcash-tech) - Read about the latest development of X-Cash
+* [**X-Cash explorer** ](https://xplorer.xcash.tech)- See your ongoing transactions and explorer the X-CASH blockchain.
 * [**GitHub**](https://github.com/xcash-tech) - The X-Cash source code and related repositories. 
-* [**X-Network**](https://x-network.io) - Check everything about X-Cash related development from the founding team.
-* [**Help Center**](https://xcashteam.atlassian.net/servicedesk) - If you encounter a bug, or want to communicate on improvements.
 
 #### Community
 
-* [**Discord** ](https://discord.gg/4CAahnd)- Engage with the community, ask questions and talk with the team.
-* [**Twitter**](https://twitter.com/home) - Follow us for weekly updates, contests and community polls.
+* [**Discord** ](https://discord.gg/2bm4UuqYZT)- Engage with the community, ask questions and talk with the team.
+* [**Twitter**](https://x.com/XcashTech) - Follow us for weekly updates, contests and community polls.
 * [**Reddit**](https://www.reddit.com/r/xcash) - Join the Reddit community
-* [**Telegram**](https://t.me/xcashglobal) - Get the latest news and announcement of anything X-CASH related
-
-#### Technical Litterature
-
-* [**FlexPrivacy**](https://x-network.io/whitepaper/XCASH_Yellowpaper_Hybrid-tx.pdf) - Public and Private transactions on the X-Cash blockchain.
-* [**DPoPS**](https://x-network.io/whitepaper/XCASH_Yellowpaper_DPoPS.pdf) - Delegated Proof-of-Private-Stake, a DPoS implementation under X-Cash.
-
-## Sources
-
-As a fork of Monero, most of the basic functions of X-Cash are already documented.  These functions are transcribed from the official Monero documentation:
-
-* [**https://monerodocs.org/**](https://monerodocs.org/interacting/monerod-reference/)
-* [**https://web.getmonero.org/resources/developer-guides/**](https://web.getmonero.org/resources/developer-guides/daemon-rpc.html)
-* [**https://moneroexamples.github.io/**](https://moneroexamples.github.io/python-json-rpc/)
+* [**Telegram**](https://t.me/xcashtech) - Get the latest news and announcement of anything X-CASH related
 
