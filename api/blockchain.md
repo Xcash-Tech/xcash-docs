@@ -6,7 +6,7 @@ Note zachys (atomic units) are 10^6 in X-Cash
 
 This method gets the stats
 
-**URL**: [https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/stats](https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/stats)
+**URL**: [https://api.xcash.tech/v1/xcash/blockchain/unauthorized/stats](https://api.xcash.tech/v1/xcash/blockchain/unauthorized/stats)
 
 **Method**: GET
 
@@ -32,7 +32,7 @@ This method gets the stats
 * _inflationTime_ - unsigned int; The estimated time when the inflation will start (when the total supply increases).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/stats/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/blockchain/unauthorized/stats/ -H 'Accept: application/json'
 {
   "height": 810000,
   "hash":"c7aa6eb38c47e7f013a5f8042477d1734ff9808fdc8608fb088085d624d2d509",
@@ -58,7 +58,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/stat
 
 This method gets the block data
 
-**URL**: [https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/blocks/{blockHeight}](https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/blocks/{blockHeight})
+**URL**: [https://api.xcash.tech/v1/xcash/blockchain/unauthorized/blocks/{blockHeight}](https://api.xcash.tech/v1/xcash/blockchain/unauthorized/blocks/{blockHeight})
 
 **Method**: GET
 
@@ -78,7 +78,7 @@ This method gets the block data
 * _tx_ - an array of transactions; The list of all transactions included in the block.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/blocks/810000/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/blockchain/unauthorized/blocks/810000/ -H 'Accept: application/json'
 {
   "height": 810000,
   "hash": "c7aa6eb38c47e7f013a5f8042477d1734ff9808fdc8608fb088085d624d2d509",
@@ -94,7 +94,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/bloc
 
 This method gets the transaction data
 
-**URL**: [https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/tx/{txHash}](https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/tx/{txHash})
+**URL**: [https://api.xcash.tech/v1/xcash/blockchain/unauthorized/tx/{txHash}](https://api.xcash.tech/v1/xcash/blockchain/unauthorized/tx/{txHash})
 
 **Method**: GET
 
@@ -114,7 +114,7 @@ This method gets the transaction data
 * _amount_ -  unsigned long long; The amount, if public.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/tx/18a5046994bec4e75d46fd17de3315592aa69d11f4b1a530717ea45a01d49312/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/blockchain/unauthorized/tx/18a5046994bec4e75d46fd17de3315592aa69d11f4b1a530717ea45a01d49312/ -H 'Accept: application/json'
 {
   "height": 87004,
   "confirmations": 851116,
@@ -130,7 +130,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/tx/1
 
 This method proves a tx and its amount
 
-**URL**: [https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/tx/prove/](https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/tx/prove/)
+**URL**: [https://api.xcash.tech/v1/xcash/blockchain/unauthorized/tx/prove/](https://api.xcash.tech/v1/xcash/blockchain/unauthorized/tx/prove/)
 
 **Method**: POST
 
@@ -146,7 +146,7 @@ This method proves a tx and its amount
 * _amount_ -  unsigned long long; The amount sent to the destination public address.
 
 ```bash
-$ curl -X POST https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/tx/prove/ -H 'Accept: application/json' -H 'Content-Type: application/json'  -d '{"tx":"18a5046994bec4e75d46fd17de3315592aa69d11f4b1a530717ea45a01d49312","address":"XCA1cH8Qs5hLYnzQTDuJqkJiQEZbgQsUM3BgA6vBod5T5Eindas5sikKJaLbkhM3YBW7PtoJY6BtNLkZuahksLFX5eSPDcmCLL","key": "c10a439b706949e86146ca17c2fc41e24e4348d6b7a6d6af0623cfc5037fe20c"}'
+$ curl -X POST https://api.xcash.tech/v1/xcash/blockchain/unauthorized/tx/prove/ -H 'Accept: application/json' -H 'Content-Type: application/json'  -d '{"tx":"18a5046994bec4e75d46fd17de3315592aa69d11f4b1a530717ea45a01d49312","address":"XCA1cH8Qs5hLYnzQTDuJqkJiQEZbgQsUM3BgA6vBod5T5Eindas5sikKJaLbkhM3YBW7PtoJY6BtNLkZuahksLFX5eSPDcmCLL","key": "c10a439b706949e86146ca17c2fc41e24e4348d6b7a6d6af0623cfc5037fe20c"}'
 {
   "valid": true,
   "amount": 5000000
@@ -157,7 +157,7 @@ $ curl -X POST https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/tx/
 
 This method proves that a wallet has at least a certain balance
 
-**URL**: [https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/prove/](https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/prove/)
+**URL**: [https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/prove/](https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/prove/)
 
 **Method**: POST
 
@@ -171,7 +171,7 @@ This method proves that a wallet has at least a certain balance
 * _amount_ -  unsigned long long; The amount that the address has proven that it holds. Note the address can hold more than this amount, but not less than this amount.
 
 ```bash
-$ curl -X POST https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/prove/ -H 'Accept: application/json' -H 'Content-Type: application/json'  -d '{"address":"XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf","signature": "ReserveProofV1a15005880f5f88b19fc88bdec29faaf57489ba85dd02d41ec87043a5eddf95a9"}'
+$ curl -X POST https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/prove/ -H 'Accept: application/json' -H 'Content-Type: application/json'  -d '{"address":"XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf","signature": "ReserveProofV1a15005880f5f88b19fc88bdec29faaf57489ba85dd02d41ec87043a5eddf95a9"}'
 {
   "amount": 10000000
 }
@@ -181,7 +181,7 @@ $ curl -X POST https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/add
 
 This method gets the public transaction history of an address
 
-**URL**: [https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/history/{type}/{address}](https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/history/{type}/{address})
+**URL**: [https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/history/{type}/{address}](https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/history/{type}/{address})
 
 **Method**: GET
 
@@ -204,7 +204,7 @@ An array of objects with the following structure:
 * _time_ -  unsigned int; The block timestamp.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/history/sender/XCA1kzoR3ZLNg5zxNmxrY8FYKtgEvPZqC2xoRpm1axCpQcrrZfoKTSkSNsASDspdt3j1WcEnQJyuuB5VPSB56WWy36A4sQtQhe/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/history/sender/XCA1kzoR3ZLNg5zxNmxrY8FYKtgEvPZqC2xoRpm1axCpQcrrZfoKTSkSNsASDspdt3j1WcEnQJyuuB5VPSB56WWy36A4sQtQhe/ -H 'Accept: application/json'
 [
   {
     "tx": "865fa7eeea471c99b85ff05f018ee315df0c95e64c11241a5ca0a40ab9b9909f",
@@ -258,7 +258,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/addr
 
 This method validates an address
 
-**URL**: [https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/validate/{address}](https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/validate/{address})
+**URL**: [https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/validate/{address}](https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/validate/{address})
 
 **Method**: GET
 
@@ -274,7 +274,7 @@ An array of objects with the following structure:
 * _valid_ -  bool; The validation status.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/validate/XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/validate/XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf/ -H 'Accept: application/json'
 {
   "valid": true
 }
@@ -284,7 +284,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/addr
 
 This method creates an integrated address
 
-**URL**: [https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/createIntegrated/](https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/createIntegrated/)
+**URL**: [https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/createIntegrated/](https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/createIntegrated/)
 
 **Method**: POST
 
@@ -299,7 +299,7 @@ This method creates an integrated address
 * _paymentId_ - string; The payment id
 
 ```bash
-$ curl -X POST https://api.xcash.foundation/v1/xcash/blockchain/unauthorized/address/createIntegrated/ -H 'Accept: application/json' -H 'Content-Type: application/json'  -d '{"address":"XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf","paymentId": "0000000000000000"}'
+$ curl -X POST https://api.xcash.tech/v1/xcash/blockchain/unauthorized/address/createIntegrated/ -H 'Accept: application/json' -H 'Content-Type: application/json'  -d '{"address":"XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf","paymentId": "0000000000000000"}'
 {
   "integratedAddress": "XCBzxaX4V6yZMYzmKuEPrmZBws3NCxUVEcMtybS5KY6UPbPjTiW7dbdPHVgDmgU5gpRX1g1DYysUY2N3hafhYd6jBw9V9bSQqSo111116d3rEy",
   "paymentId": "0000000000000000"

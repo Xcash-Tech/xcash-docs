@@ -1,6 +1,6 @@
 ## Introduction
 
-The X-Cash API https://api.xcash.foundation allows users to read information from various X-Cash products using one standardized API. The current individual API can still be used, but it is recommended to migrate and use the standard API for various reasons.
+The X-Cash API https://api.xcash.tech allows users to read information from various X-Cash products using one standardized API. The current individual API can still be used, but it is recommended to migrate and use the standard API for various reasons.
 
 * The individual API were built mostly for the websites, not as a standardized API for users.
 * The standard API will use "standardized" API methods, resources, parameters, return field types etc
@@ -23,27 +23,27 @@ Note: For the blockchain API it is not meant to be a complete set. You can get m
     <tr>
       <td style="text-align:left"><b>I want to submit an issue or feature request</b>
       </td>
-      <td style="text-align:left">Please view the <a href="https://github.com/X-CASH-official/API">github repository</a></td>
+      <td style="text-align:left">Please view the <a href="https://github.com/xcash-tech/API">github repository</a></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>I want to view the API for the blockchain</b>
       </td>
-      <td style="text-align:left">Please view the <a href="https://docs.xcash.foundation/api/blockchain">documentation</a></td>
+      <td style="text-align:left">Please view the <a href="https://docs.xcash.tech/api/blockchain">documentation</a></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>I want to view the API for DPOPS</b>
       </td>
-      <td style="text-align:left">Please view the <a href="https://docs.xcash.foundation/api/dpops">documentation</a></td>
+      <td style="text-align:left">Please view the <a href="https://docs.xcash.tech/api/dpops">documentation</a></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>I want to view the API for Namespace Protocol</b>
       </td>
-      <td style="text-align:left">Please view the <a href="https://docs.xcash.foundation/api/namespace">documentation</a></td>
+      <td style="text-align:left">Please view the <a href="https://docs.xcash.tech/api/namespace">documentation</a></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>I want to view the API for X-Payment Twitter</b>
       </td>
-      <td style="text-align:left">Please view the <a href="https://docs.xcash.foundation/api/xpayment-twitter">documentation</a></td>
+      <td style="text-align:left">Please view the <a href="https://docs.xcash.tech/api/xpayment-twitter">documentation</a></td>
     </tr>
     <tr>
   </tbody>

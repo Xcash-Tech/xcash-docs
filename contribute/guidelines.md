@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-The following guidelines ensure that any contributor is able to bring thorough and documented additions to the code, as well as participate in the development of the X-Cash Foundation to bring success to the project. They are not an absolute requirement, but following these recommendations ensure that the pull requests and improvements can be reviewed, accepted and added to the core code.
+The following guidelines ensure that any contributor is able to bring thorough and documented additions to the code, as well as participate in the development of the X-Cash Tech to bring success to the project. They are not an absolute requirement, but following these recommendations ensure that the pull requests and improvements can be reviewed, accepted and added to the core code.
 
 ## Code & Testing recommendations
 
@@ -24,7 +24,7 @@ The core characteristics of a clean code are the following. You should aim to me
 2. **Clean code should be focused -** Each class, function, module etc.. should have a single responsability and not be polluted by surrouding details.
 3. **Clean code should be taken care of -** Always keep it simple and ordered, so as to make it easier for the next developer.
 
-A developer from the X-Cash Foundation, or another contributor will maintain your code; it is not a machine, please have this in mind. Pay attention to your formatting, variable naming and so forth to work toward a Clean Code.
+A developer from the X-Cash Tech, or another contributor will maintain your code; it is not a machine, please have this in mind. Pay attention to your formatting, variable naming and so forth to work toward a Clean Code.
 
 Another set of principle to follow to ensure a well designed, flexible, testable and maintainable code is the [SOLID](https://en.wikipedia.org/wiki/SOLID) pattern:
 

@@ -87,7 +87,7 @@ Becoming a delegate is ambitious, and reaching and keeping a forging spot is rew
 
 ## Useful Links <a id="key-features"></a>
 
-* \*\*\*\*[**GitHub**](https://github.com/X-CASH-official/xcash-dpops) - Source code of the DPoPS program.
+* \*\*\*\*[**GitHub**](https://github.com/xcash-tech/xcash-dpops) - Source code of the DPoPS program.
 * \*\*\*\*[**Technical documentation**](yellowpaper-delagated-proof-of-private-stake.md) - Delegated Proof-of-Private-Stake, a DPoS implementation under X-Cash.
 * \*\*\*\*[**Discord Server**](https://discord.gg/4CAahnd) - Join the Discord server to announce yourself as a delegate.
 

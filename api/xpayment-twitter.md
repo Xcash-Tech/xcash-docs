@@ -6,7 +6,7 @@ Note zachys (atomic units) are 10^6 in X-Cash
 
 This method gets the stats
 
-**URL**: [https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/stats/](https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/stats/)
+**URL**: [https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/stats/](https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/stats/)
 
 **Method**: GET
 
@@ -32,7 +32,7 @@ This method gets the stats
 * _totalVolumeSentLastHourPrivate_ - unsigned long long; Total volume sent for private tips in last hour, in zachys (atomic units).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/stats/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/stats/ -H 'Accept: application/json'
 {
   "totalUsers": 7,
   "avgTipAmount": 10,
@@ -57,7 +57,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthori
 
 This method gets the daily amount of payments and volumes sent per day
 
-**URL**: [https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/statsPerDay/{start}/{limit}](https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/statsPerDay/{start}/{limit})
+**URL**: [https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/statsPerDay/{start}/{limit}](https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/statsPerDay/{start}/{limit})
 
 **Method**: GET
 
@@ -76,7 +76,7 @@ Array of objects with the following structure:
 * _volume_ - unsigned long long; Total volume sent in zachys (atomic units).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/statsPerDay/1/2/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/statsPerDay/1/2/ -H 'Accept: application/json'
 [
   {
     "time": 1654228489,
@@ -95,7 +95,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthori
 
 This method gets the top users for tips and volume
 
-**URL**: [https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/topStats/{amount}](https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/topStats/{amount})
+**URL**: [https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/topStats/{amount}](https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/topStats/{amount})
 
 **Method**: GET
 
@@ -114,7 +114,7 @@ This method gets the top users for tips and volume
   * _volume_ - unsigned long long; Total volume sent in zachys (atomic units).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/topStats/2 -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/topStats/2 -H 'Accept: application/json'
 {
   "topTips": [
     {
@@ -143,7 +143,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthori
 
 This method gets the recent tips
 
-**URL**: [https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/recentTips/{amount}](https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/recentTips/{amount})
+**URL**: [https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/recentTips/{amount}](https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/recentTips/{amount})
 
 **Method**: POST
 
@@ -167,7 +167,7 @@ Array of objects with the following structure:
 * _type_ - string; The tip type.
 
 ```bash
-$ curl -X POST https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/recentTips/2 -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Content-Type: application/json'  -d '{"sort":"First","type":"All"}'
+$ curl -X POST https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/recentTips/2 -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Content-Type: application/json'  -d '{"sort":"First","type":"All"}'
 [
   {
     "tweetId": "",

@@ -8,9 +8,9 @@ Please use the [website](website) as the website will step by step walk you thro
 
 Open and fully sync your wallet that you want to register. This will tied to the NAME.xcash namespace. You will also need two other addresses. One that you want to be tied to NAME.sxcash that can only send and receive private transactions, and one that you want to be tied to NAME.pxcash that can only send and receive public transactions. It is highly reccomended you use two new wallets for this.
 
-You can view if a name is avalible by using http://www.delegates.xcash.foundation//remotedatagetnamestatus?parameter1=NAME
+You can view if a name is avalible by using http://www.delegates.xcash.tech//remotedatagetnamestatus?parameter1=NAME
 
-You can view the previous block producer on the website with the price, but you can also use the [API](http://www.delegates.xcash.foundation/remotedatagetblockproducerinformation)
+You can view the previous block producer on the website with the price, but you can also use the [API](http://www.delegates.xcash.tech/remotedatagetblockproducerinformation)
 
 Once you have a delegate and price you want to use for name, run this command `remote_data_save_name <name>`  
 

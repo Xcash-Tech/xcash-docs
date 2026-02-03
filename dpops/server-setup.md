@@ -337,5 +337,5 @@ Assuming that the domain you bought is **`domain-name.com`**, the A Record above
 
 ## Set up your delegate node
 
-Once you have done every step above, and are familiarized with your server, you can go through the next step and install the delegate program, `xcash-dpops`. Follow the [delegate node installation](https://github.com/X-CASH-official/gitbook-docs/tree/470d72f73fb05e85c916dd3b952cd3fe194fef30/dpops/installation-process.md) for a complete tutorial.
+Once you have done every step above, and are familiarized with your server, you can go through the next step and install the delegate program, `xcash-dpops`. Follow the [delegate node installation](https://github.com/xcash-tech/gitbook-docs/tree/470d72f73fb05e85c916dd3b952cd3fe194fef30/dpops/installation-process.md) for a complete tutorial.
 

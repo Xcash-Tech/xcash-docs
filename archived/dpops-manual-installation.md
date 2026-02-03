@@ -32,7 +32,7 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install build-essential cmake pkg-config libssl-dev git -y
 ```
 
-If you want to install [`xcash-core`](https://github.com/X-CASH-official/xcash-core) from source, you will need to install these [additional packages](https://github.com/X-CASH-official/xcash-core#dependencies).
+If you want to install [`xcash-core`](https://github.com/xcash-tech/xcash-core) from source, you will need to install these [additional packages](https://github.com/xcash-tech/xcash-core#dependencies).
 
 ```bash
 sudo apt install libboost-all-dev libzmq3-dev libunbound-dev libsodium-dev libminiupnpc-dev libunwind8-dev liblzma-dev libreadline6-dev libldns-dev libexpat1-dev libgtest-dev doxygen graphviz libpcsclite-dev screen p7zip-full -y
@@ -109,7 +109,7 @@ sudo ldconfig
 Clone the `xcash-core` repository to your installation folder and go to the downloaded folder:
 
 ```bash
-cd ~/xcash-official/ && git clone https://github.com/X-CASH-official/xcash-core.git
+cd ~/xcash-official/ && git clone https://github.com/xcash-tech/xcash-core.git
 cd xcash-core
 git checkout --quiet xcash_proof_of_stake
 ```
@@ -128,7 +128,7 @@ Once the build finishes, the binaries will be located in `~/xcash-official/xcash
 At this point, all the dependencies should be installed and built. First, clone the **`xcash-dpops`** repository:
 
 ```bash
-cd ~/xcash-official/ && git clone https://github.com/X-CASH-official/xcash-dpops.git
+cd ~/xcash-official/ && git clone https://github.com/xcash-tech/xcash-dpops.git
 ```
 
 Go into the downloaded folder, and build using `make`:
@@ -531,7 +531,7 @@ Make sure to[ update your public information](../dpops/register-delegate.md#3-up
 The **`shared delegate website`** has been automatically installed if you installed it with the auto-installer script.
 {% endhint %}
 
-As a shared delegate, you will need to pay your voters a share of the block reward. We have designed a [**`delegate pool website`**](https://github.com/X-CASH-official/delegates-pool-website), which works similarly to a regular PoW pool website, where your voters can see their pending payments, your forging statistics and so on...
+As a shared delegate, you will need to pay your voters a share of the block reward. We have designed a [**`delegate pool website`**](https://github.com/xcash-tech/delegates-pool-website), which works similarly to a regular PoW pool website, where your voters can see their pending payments, your forging statistics and so on...
 
 First, install the website dependencies:
 
@@ -572,10 +572,10 @@ npm install -g @angular/cli@latest uglify-js
 
 **Build**
 
-Once all dependencies are installed, clone the [**`delegate pool website`**](https://github.com/X-CASH-official/delegates-pool-website) repository :
+Once all dependencies are installed, clone the [**`delegate pool website`**](https://github.com/xcash-tech/delegates-pool-website) repository :
 
 ```text
-cd ~/xcash-official && git clone https://github.com/X-CASH-official/delegates-pool-website.git
+cd ~/xcash-official && git clone https://github.com/xcash-tech/delegates-pool-website.git
 ```
 
 Go into the folder, install the dependencies, and build the website:
@@ -600,5 +600,5 @@ cp -a dist/* ~/xcash-official/xcash-dpops/delegates-pool-website
 ```
 
 **And you are done** 🎉  
-Verify that you are listed in the [delegate explorer](http://delegates.xcash.foundation/), and start advertising your node to get people joining your cause and vote for you!
+Verify that you are listed in the [delegate explorer](http://delegates.xcash.tech/), and start advertising your node to get people joining your cause and vote for you!
 

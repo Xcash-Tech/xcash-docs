@@ -15,17 +15,17 @@ The X-Cash Turbo TX allows users to send Layer 1 zero confirmation transactions 
     <tr>
       <td style="text-align:left"><b>I want to learn more about turbo tx</b>
       </td>
-      <td style="text-align:left">Please review the <a href="https://docs.xcash.foundation/turbotx/introduction">introduction</a></td>
+      <td style="text-align:left">Please review the <a href="https://docs.xcash.tech/turbotx/introduction">introduction</a></td>
     </tr>
     <tr>
       <td style="text-align:left"><b>I want to send a turbo tx</b>
       </td>
-      <td style="text-align:left">Please review the <a href="https://docs.xcash.foundation/turbotx/send">send</a> documentation</td>
+      <td style="text-align:left">Please review the <a href="https://docs.xcash.tech/turbotx/send">send</a> documentation</td>
     </tr>
     <tr>
       <td style="text-align:left"><b>I want to receive and verify a turbo tx</b>
       </td>
-      <td style="text-align:left">Please review the <a href="https://docs.xcash.foundation/turbotx/receive">receive</a> documentation</td>
+      <td style="text-align:left">Please review the <a href="https://docs.xcash.tech/turbotx/receive">receive</a> documentation</td>
     </tr>
     <tr>
   </tbody>
@@ -43,4 +43,4 @@ The X-Cash Turbo TX allows users to send Layer 1 zero confirmation transactions 
 
 ## Useful Links <a id="key-features"></a>
 
-* \*\*\*\*[**GitHub**](https://github.com/X-CASH-official/xcash-dpops) - Source code of the DPoPS and namespace program.
+* \*\*\*\*[**GitHub**](https://github.com/xcash-tech/xcash-dpops) - Source code of the DPoPS and namespace program.

@@ -7,7 +7,7 @@ description: >-
 
 You will need to renew your namespace, as they only last 1 year after every register or renewal. You can renew a namespace after it expires, but anyone else can as well, so make sure to renew it a few days before the expiration date. You can not currently renew early or for multiple years at this time.
 
-You can always view all details (including registration time) of your namespace by visiting http://www.delegates.xcash.foundation/remotedatagetinformationfromname?parameter1=NAME (where NAME is your name of the namespace)
+You can always view all details (including registration time) of your namespace by visiting http://www.delegates.xcash.tech/remotedatagetinformationfromname?parameter1=NAME (where NAME is your name of the namespace)
 
 #### Renewal
 
@@ -15,7 +15,7 @@ Please use the [website](website) as the website will step by step walk you thro
 
 Open and fully sync your wallet that is tied to the "address" field on your namespace.
 
-You can view the previous block producer on the website with the price, but you can also use the [API](http://www.delegates.xcash.foundation/remotedatagetblockproducerinformation)
+You can view the previous block producer on the website with the price, but you can also use the [API](http://www.delegates.xcash.tech/remotedatagetblockproducerinformation)
 
 Once you have a delegate and price you want to use, run this command `remote_data_renewal_start`  
 

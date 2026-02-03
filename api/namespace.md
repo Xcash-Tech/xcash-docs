@@ -6,7 +6,7 @@ Note zachys (atomic units) are 10^6 in X-Cash
 
 This method gets the stats
 
-**URL**: [https://api.xcash.foundation/v1/xcash/namespace/unauthorized/stats/](https://api.xcash.foundation/v1/xcash/namespace/unauthorized/stats/)
+**URL**: [https://api.xcash.tech/v1/xcash/namespace/unauthorized/stats/](https://api.xcash.tech/v1/xcash/namespace/unauthorized/stats/)
 
 **Method**: GET
 
@@ -18,7 +18,7 @@ This method gets the stats
 * _totalVolume_ - unsigned long long; The total xcash paid to delegates using the namespace protocol in zachys (atomic units).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/stats/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/namespace/unauthorized/stats/ -H 'Accept: application/json'
 {
   "totalNamesRegisteredOrRenewed": 100,
   "totalVolume": 10000000
@@ -29,7 +29,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/stats
 
 This method gets all of the registered delegates
 
-**URL**: [https://api.xcash.foundation/v1/xcash/namespace/unauthorized/delegates/registered](https://api.xcash.foundation/v1/xcash/namespace/unauthorized/delegates/registered)
+**URL**: [https://api.xcash.tech/v1/xcash/namespace/unauthorized/delegates/registered](https://api.xcash.tech/v1/xcash/namespace/unauthorized/delegates/registered)
 
 **Method**: GET
 
@@ -43,7 +43,7 @@ Array of objects with the following structure:
 * _amount_ - unsigned long long; The amount to register or renew a name, using this delegate in zachys (atomic units).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/delegates/registered/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/namespace/unauthorized/delegates/registered/ -H 'Accept: application/json'
 [
   {
     "delegateName": "us1_xcash_foundation",
@@ -60,7 +60,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/deleg
 
 This method gets the delegates data
 
-**URL**: [https://api.xcash.foundation/v1/xcash/namespace/unauthorized/delegates/{delegateName}](https://api.xcash.foundation/v1/xcash/namespace/unauthorized/delegates/{delegateName})
+**URL**: [https://api.xcash.tech/v1/xcash/namespace/unauthorized/delegates/{delegateName}](https://api.xcash.tech/v1/xcash/namespace/unauthorized/delegates/{delegateName})
 
 **Method**: GET
 
@@ -76,7 +76,7 @@ This method gets the delegates data
 * _totalVolume_ - unsigned long long; The total xcash paid to delegates using the namespace protocol in zachys (atomic units).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/delegates/us1_xcash_foundation/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/namespace/unauthorized/delegates/us1_xcash_foundation/ -H 'Accept: application/json'
 {
   "delegateName": "us1_xcash_foundation",
   "publicAddress": "XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf",
@@ -90,7 +90,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/deleg
 
 This method gets the names data for a specific name
 
-**URL**: [https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/{name}](https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/{name})
+**URL**: [https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/{name}](https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/{name})
 
 **Method**: GET
 
@@ -107,7 +107,7 @@ This method gets the names data for a specific name
 * _delegateAmount_ - unsigned long long; The total xcash paid to delegates to register or renew the namespace in zachys (atomic units).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/xcash/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/xcash/ -H 'Accept: application/json'
 {
   "address": "XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf",
   "saddress": "XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf",
@@ -122,7 +122,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names
 
 This method checks if a name can be purchased,either by it has not been registered yet, or it has expired
 
-**URL**: [https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/status/{name}](https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/status/{name})
+**URL**: [https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/status/{name}](https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/status/{name})
 
 **Method**: GET
 
@@ -134,7 +134,7 @@ This method checks if a name can be purchased,either by it has not been register
 * _status_ - bool; True if one can register the name, otherwise false.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/status/xcash/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/status/xcash/ -H 'Accept: application/json'
 {
   "status": false
 }
@@ -144,7 +144,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names
 
 This method gets the address status
 
-**URL**: [https://api.xcash.foundation/v1/xcash/namespace/unauthorized/addresses/status/{address}](https://api.xcash.foundation/v1/xcash/namespace/unauthorized/addresses/status/{address})
+**URL**: [https://api.xcash.tech/v1/xcash/namespace/unauthorized/addresses/status/{address}](https://api.xcash.tech/v1/xcash/namespace/unauthorized/addresses/status/{address})
 
 **Method**: GET
 
@@ -156,7 +156,7 @@ This method gets the address status
 * _status_ - string; "not registered|address|saddress|paddress"
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/addresses/status/XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/namespace/unauthorized/addresses/status/XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf/ -H 'Accept: application/json'
 {
   "status": "address"
 }
@@ -166,7 +166,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/addre
 
 This method converts a name to an address
 
-**URL**: [https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/convert/{name}](https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/convert/{name})
+**URL**: [https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/convert/{name}](https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/convert/{name})
 
 **Method**: GET
 
@@ -180,7 +180,7 @@ This method converts a name to an address
 * _paddress_ - string; The paddress.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names/convert/xcash/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/namespace/unauthorized/names/convert/xcash/ -H 'Accept: application/json'
 {
   "address": "XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf",
   "saddress": "XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf",
@@ -192,7 +192,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/names
 
 This method converts an address to a name and extension
 
-**URL**: [https://api.xcash.foundation/v1/xcash/namespace/unauthorized/addresses/convert/{address}](https://api.xcash.foundation/v1/xcash/namespace/unauthorized/addresses/convert/{address})
+**URL**: [https://api.xcash.tech/v1/xcash/namespace/unauthorized/addresses/convert/{address}](https://api.xcash.tech/v1/xcash/namespace/unauthorized/addresses/convert/{address})
 
 **Method**: GET
 
@@ -205,7 +205,7 @@ This method converts an address to a name and extension
 * _extension_ - string; The extension.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/namespace/unauthorized/addresses/convert/XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/namespace/unauthorized/addresses/convert/XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf/ -H 'Accept: application/json'
 {
   "name": "xcash",
   "extension": ".pxcash"

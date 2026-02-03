@@ -6,7 +6,7 @@ Note zachys (atomic units) are 10^6 in X-Cash
 
 This method gets the stats
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/stats/](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/stats/)
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/stats/](https://api.xcash.tech/v1/xcash/dpops/unauthorized/stats/)
 
 **Method**: GET
 
@@ -31,7 +31,7 @@ This method gets the stats
 * _currentBlockVerifiersValidAmount_ - unsigned int; The current amount of delegates that is needed for verification.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthorized/stats/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xpayment-twitter/twitter/unauthorized/stats/ -H 'Accept: application/json'
 {
   "mostTotalRoundsDelegateName": "europe3_xcash_foundation",
   "mostTotalRounds": 121528,
@@ -55,7 +55,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xpayment-twitter/twitter/unauthori
 
 This method gets all of the registered delegates
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/registered](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/registered)
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/registered](https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/registered)
 
 **Method**: GET
 
@@ -78,12 +78,12 @@ Array of objects with the following structure:
 * _onlinePercentage_ - unsigned int; The online percentage.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/registered/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/registered/ -H 'Accept: application/json'
 [
   {
     "votes": 100000000,
     "voters": 10,
-    "IPAdress": "us1.xcash.foundation",
+    "IPAdress": "us1.xcash.tech",
     "delegateName": "us1_xcash_foundation",
     "sharedDelegate": false,
     "seedNode": true,
@@ -96,7 +96,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
   {
     "votes": 0,
     "voters": 10,
-    "IPAdress": "europe1.xcash.foundation",
+    "IPAdress": "europe1.xcash.tech",
     "delegateName": "europe1_xcash_foundation",
     "sharedDelegate": true,
     "seedNode": false,
@@ -113,7 +113,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
 
 This method gets all of the online delegates
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/online](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/online)
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/online](https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/online)
 
 **Method**: GET
 
@@ -136,12 +136,12 @@ Array of objects with the following structure:
 * _onlinePercentage_ - unsigned int; The online percentage.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/online/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/online/ -H 'Accept: application/json'
 [
   {
     "votes": 100000000,
     "voters": 10,
-    "IPAdress": "us1.xcash.foundation",
+    "IPAdress": "us1.xcash.tech",
     "delegateName": "us1_xcash_foundation",
     "sharedDelegate": false,
     "seedNode": true,
@@ -154,7 +154,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
   {
     "votes": 0,
     "voters": 10,
-    "IPAdress": "europe1.xcash.foundation",
+    "IPAdress": "europe1.xcash.tech",
     "delegateName": "europe1_xcash_foundation",
     "sharedDelegate": true,
     "seedNode": false,
@@ -171,7 +171,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
 
 This method gets the current active delegates (top 50) during the round
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/active](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/active)
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/active](https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/active)
 
 **Method**: GET
 
@@ -194,12 +194,12 @@ Array of objects with the following structure:
 * _onlinePercentage_ - unsigned int; The online percentage.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/active/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/active/ -H 'Accept: application/json'
 [
   {
     "votes": 100000000,
     "voters": 10,
-    "IPAdress": "us1.xcash.foundation",
+    "IPAdress": "us1.xcash.tech",
     "delegateName": "us1_xcash_foundation",
     "sharedDelegate": false,
     "seedNode": true,
@@ -212,7 +212,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
   {
     "votes": 0,
     "voters": 10,
-    "IPAdress": "europe1.xcash.foundation",
+    "IPAdress": "europe1.xcash.tech",
     "delegateName": "europe1_xcash_foundation",
     "sharedDelegate": true,
     "seedNode": false,
@@ -229,7 +229,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
 
 This method gets the delegates data
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/{delegateName}](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/{delegateName})
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/{delegateName}](https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/{delegateName})
 
 **Method**: GET
 
@@ -259,11 +259,11 @@ This method gets the delegates data
 * _rank_ - unsigned int; The delegates current rank.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/us1_xcash_foundation/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/us1_xcash_foundation/ -H 'Accept: application/json'
 {
   "votes": 100000000,
   "voters": 10,
-  "IPAdress": "us1.xcash.foundation",
+  "IPAdress": "us1.xcash.tech",
   "delegateName": "us1_xcash_foundation",
   "publicAddress": "XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf",
   "about": "",
@@ -285,7 +285,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
 
 This method gets the stats about the blocks the delegate produced
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/rounds/{delegateName}](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/rounds/{delegateName})
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/rounds/{delegateName}](https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/rounds/{delegateName})
 
 **Method**: GET
 
@@ -306,7 +306,7 @@ This method gets the stats about the blocks the delegate produced
   * _time_ - unsigned int; The time stamp.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/rounds/us1_xcash_foundation/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/rounds/us1_xcash_foundation/ -H 'Accept: application/json'
 {
   "totalBlocksProduced": 100,
   "totalBlockRewards": 1000000000,
@@ -331,7 +331,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
 
 This method gets the vote data for a delegate
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/votes/{delegateName}/{start}/{limit}](https://api.xcash.foundation/v1/xcash/dpops/delegates/votes/{delegateName}/{start}/{limit})
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/votes/{delegateName}/{start}/{limit}](https://api.xcash.tech/v1/xcash/dpops/delegates/votes/{delegateName}/{start}/{limit})
 
 **Method**: GET
 
@@ -351,7 +351,7 @@ An array of objects with the following structure:
 * _reserveProof_ - string; The reserve proof.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates/votes/us1_xcash_foundation/1/2/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/delegates/votes/us1_xcash_foundation/1/2/ -H 'Accept: application/json'
 [
   {
     "publicAddress": "XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf",
@@ -370,7 +370,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/delegates
 
 This method gets the vote data from a specific address
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/votes/{address}](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/votes/{address})
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/votes/{address}](https://api.xcash.tech/v1/xcash/dpops/unauthorized/votes/{address})
 
 **Method**: GET
 
@@ -385,7 +385,7 @@ This method gets the vote data from a specific address
 * _amount_ - unsigned long long; The vote amount in zachys (atomic units).
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/votes/XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/votes/XCA1a9usG2UKajV1Dqzp8fL1BbN3hzuaaJMYjCo7qDoC4C3Vvc5owiLAqKbVw2cRbwRqx3mgrau1Z7LkX6cxR2NC4ZmFBLe2Mf/ -H 'Accept: application/json'
 {
   "delegateName": "us1_xcash_foundation",
   "amount": 1000000000
@@ -396,7 +396,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/votes/XCA
 
 This method gets the round details
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/rounds/{blockHeight}](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/rounds/{blockHeight})
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/rounds/{blockHeight}](https://api.xcash.tech/v1/xcash/dpops/unauthorized/rounds/{blockHeight})
 
 **Method**: GET
 
@@ -410,7 +410,7 @@ This method gets the round details
 An array of delegate names that verified the block
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/rounds/810000/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/rounds/810000/ -H 'Accept: application/json'
 {
   "delegates": [
     "us1_xcash_foundation",
@@ -423,7 +423,7 @@ $ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/rounds/81
 
 This method gets the last block producer
 
-**URL**: [https://api.xcash.foundation/v1/xcash/dpops/unauthorized/lastBlockProducer](https://api.xcash.foundation/v1/xcash/dpops/unauthorized/lastBlockProducer)
+**URL**: [https://api.xcash.tech/v1/xcash/dpops/unauthorized/lastBlockProducer](https://api.xcash.tech/v1/xcash/dpops/unauthorized/lastBlockProducer)
 
 **Method**: GET
 
@@ -434,7 +434,7 @@ This method gets the last block producer
 * _lastBlockProducer_ - The last block producer.
 
 ```bash
-$ curl -X GET https://api.xcash.foundation/v1/xcash/dpops/unauthorized/lastBlockProducer/ -H 'Accept: application/json'
+$ curl -X GET https://api.xcash.tech/v1/xcash/dpops/unauthorized/lastBlockProducer/ -H 'Accept: application/json'
 {
   "lastBlockProducer": "us1_xcash_foundation"
 }

@@ -57,7 +57,7 @@ delegate_register my_delegate my_delegate.domain.com cf8718d638ce0a831f3538ea60d
 
 You will be prompted to wait for the next valid data interval. Once your request has been accepted, you will receive the message **`The delegate has been registered successfully`**.
 
-You can check in the [delegates explorer](http://delegates.xcash.foundation/) if your node is correctly appearing.
+You can check in the [delegates explorer](http://delegates.xcash.tech/) if your node is correctly appearing.
 
 You can **`exit`** the wallet, and restart the wallet service:
 
@@ -67,7 +67,7 @@ systemctl restart xcash-rpc-wallet
 
 ## 2. Update Public Information
 
-Each registered delegates will be displayed in the [delegates explorer](http://delegates.xcash.foundation/), along with their statistics and information. At registration, the minimum information that is displayed is your **delegate name** and **IP address**. You can add additional instructions to help others identify you or rally to your cause and vote for you.
+Each registered delegates will be displayed in the [delegates explorer](http://delegates.xcash.tech/), along with their statistics and information. At registration, the minimum information that is displayed is your **delegate name** and **IP address**. You can add additional instructions to help others identify you or rally to your cause and vote for you.
 
 First of all, the wallet service should be running in the background. Stop it by using the command:
 

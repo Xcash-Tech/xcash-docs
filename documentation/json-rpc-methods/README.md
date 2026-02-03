@@ -30,7 +30,7 @@ Look up how many blocks are in the longest chain known to the node.
 **Example:**
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_count"}' -H 'Content-Type: application/json' 
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_count"}' -H 'Content-Type: application/json' 
 {  
   "id": "0",  
   "jsonrpc": "2.0",  
@@ -58,7 +58,7 @@ Look up a block's hash by its height.Block header information can be retrieved u
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"on_get_block_hash","params":[425000]}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"on_get_block_hash","params":[425000]}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -92,7 +92,7 @@ Get a block template on which mining a new block.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_template","params":{"wallet_address":"XCA1XPzaSeXgwrBrGbh96UD5bk21a4WabcrgtB14A7WGGdcagjVQVV1PMAg5Rj1SM3ca8ZPDvysi78HyZF9imGg48wRK2Ntqov","reserve_size":128}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_template","params":{"wallet_address":"XCA1XPzaSeXgwrBrGbh96UD5bk21a4WabcrgtB14A7WGGdcagjVQVV1PMAg5Rj1SM3ca8ZPDvysi78HyZF9imGg48wRK2Ntqov","reserve_size":128}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -127,7 +127,7 @@ Submit a mined block to the network.
 ### In this example, a block blob which has not been mined is submitted:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_block","params":["0c0ceadfe6eb051eb5164dfe508a6d7681d8b490a915cde9d0762d1b936beda7d4c9ee8bc9dc280000000002c7a31a01ff8ba31a01f69a92cabb0102ecb13a092850dd0387b40a162e6b154c677e6a4a5ab6530b9c508fac4c5b9168a30101b53cfbe508ca940be5544d91c7cb6f34d4a62af1faa16453a3406f443979ca52028000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002acc77f92091e5ebccdd904da4a03e4eb9153f13e338add4b314b436858fb7ea33bc2ea30b4982c4336311f38caed30601f72ae22a44f11ae04ccd59663e135df"]' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"submit_block","params":["0c0ceadfe6eb051eb5164dfe508a6d7681d8b490a915cde9d0762d1b936beda7d4c9ee8bc9dc280000000002c7a31a01ff8ba31a01f69a92cabb0102ecb13a092850dd0387b40a162e6b154c677e6a4a5ab6530b9c508fac4c5b9168a30101b53cfbe508ca940be5544d91c7cb6f34d4a62af1faa16453a3406f443979ca52028000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002acc77f92091e5ebccdd904da4a03e4eb9153f13e338add4b314b436858fb7ea33bc2ea30b4982c4336311f38caed30601f72ae22a44f11ae04ccd59663e135df"]' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -168,7 +168,7 @@ Block header information for the most recent block is easily retrieved with this
 **In this example, the most recent block \(1562023 at the time\) is returned:**
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_last_block_header"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_last_block_header"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -216,7 +216,7 @@ Block header information can be retrieved using either a block's hash or height.
 ### In this example, block 430477 is looked up by its hash:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_header_by_hash","params":{"hash":"062537808276507cb05b5d5f80dbc8dd2bb79a9213be9958dfed1517742cc6a1"}}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_header_by_hash","params":{"hash":"062537808276507cb05b5d5f80dbc8dd2bb79a9213be9958dfed1517742cc6a1"}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -264,7 +264,7 @@ Similar to get\_block\_header\_by\_hash above, this method includes a block's he
 ### In this example, block 430477 is looked up by its height \(notice that the returned information is the same as in the previous example\):
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_header_by_height","params":{"height":430477}}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_header_by_height","params":{"height":430477}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -311,7 +311,7 @@ Similar to get\_block\_header\_by\_height above, but for a range of blocks. This
 * _untrusted_ - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted \(`true`\), or when the daemon is fully synced \(`false`\).
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_headers_range","params":{"start_height":430477,"end_height":430478}}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block_headers_range","params":{"start_height":430477,"end_height":430478}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -399,7 +399,7 @@ Full block information can be retrieved by either block height or hash, like wit
 In the following example, block 430477 is looked up by its height. Note that block 912345 does not have any non-coinbase transactions. \(See the next example for a block with extra transactions\):
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block","params":{"height":430477}}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block","params":{"height":430477}}' -H 'Content-Type: application/json'
 ```
 
 ### Look up by hash:
@@ -407,7 +407,7 @@ $ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id
 In the following example, block 430477 is looked up by its hash. Note that block 993056 has 3 non-coinbase transactions:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block","params":{"hash":"0e078893024b2425652e8d5e4a8f29ae2e31de49784f4953a2293113f1683ece"}}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_block","params":{"hash":"0e078893024b2425652e8d5e4a8f29ae2e31de49784f4953a2293113f1683ece"}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -476,7 +476,7 @@ Retrieve information about incoming and outgoing connections to your node.
   **Following is an example of** get\_connections **and it's return:**
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_connections"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_connections"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -557,7 +557,7 @@ See other RPC Methods /get\_info \(not JSON\)
 ### Following is an example `get_info` call and its return:
 
 > ```bash
-> $ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_info"}' -H 'Content-Type: application/json'
+> $ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_info"}' -H 'Content-Type: application/json'
 > {
 >   "id": "0",
 >   "jsonrpc": "2.0",
@@ -621,7 +621,7 @@ Look up information regarding hard fork voting and readiness.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"hard_fork_info"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"hard_fork_info"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -663,7 +663,7 @@ $ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id
 In the following example, host is banned with its IP address string-formatted as A.B.C.D:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_bans","params":{"bans":[{"host":"192.168.1.51","ban":true,"seconds":30}]}}' -H  'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_bans","params":{"bans":[{"host":"192.168.1.51","ban":true,"seconds":30}]}}' -H  'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -678,7 +678,7 @@ $ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id
 In the following example, integer-formatted IP is banned:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_bans","params":{"bans":[{"ip":838969536,"ban":true,"seconds":30}]}}' -H  'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"set_bans","params":{"bans":[{"ip":838969536,"ban":true,"seconds":30}]}}' -H  'Content-Type: application/json'
 
 {
   "id": "0",
@@ -708,7 +708,7 @@ Get list of banned IPs.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_bans"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_bans"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -744,7 +744,7 @@ Flush tx ids from transaction pool
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_txpool"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"flush_txpool"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -779,7 +779,7 @@ Get a histogram of output amounts. For all amounts \(possibly filtered by parame
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_output_histogram","params":{"amounts":[100000000000]}}'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_output_histogram","params":{"amounts":[100000000000]}}'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -816,7 +816,7 @@ Get the coinbase amount and the fees amount for n last blocks starting at partic
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_coinbase_tx_sum","params":{"height":425000,"count":1}}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_coinbase_tx_sum","params":{"height":425000,"count":1}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -843,7 +843,7 @@ $ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_version"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_version"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -874,7 +874,7 @@ Gives an estimation on fees per kB.
 ### Example :
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_fee_estimate"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_fee_estimate"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -907,7 +907,7 @@ Display alternative chains seen by the node.
 ### Example
 
 ```c
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_alternate_chains"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"get_alternate_chains"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -940,7 +940,7 @@ Outputs:
 **Example :**
 
 ```bash
-curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"relay_tx","params":{"txids":["9fd75c429cbe52da9a52f2ffc5fbd107fe7fd2099c0d8de274dc8a67e0c98613"]}}' -H 'Content-Type: application/json'
+curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"relay_tx","params":{"txids":["9fd75c429cbe52da9a52f2ffc5fbd107fe7fd2099c0d8de274dc8a67e0c98613"]}}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",
@@ -977,7 +977,7 @@ Outputs:
 **Example:**
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sync_info"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/json_rpc -d '{"jsonrpc":"2.0","id":"0","method":"sync_info"}' -H 'Content-Type: application/json'
 {
   "id": "0",
   "jsonrpc": "2.0",

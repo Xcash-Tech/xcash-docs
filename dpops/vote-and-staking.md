@@ -12,7 +12,7 @@ Currently you can vote from the CLI wallet, android wallet, and GUI wallet. X-Ba
 
 ## Find Your Delegate
 
-All delegates are listed on the [delegate explorer](http://delegates.xcash.foundation/delegates). Take time to get to learn more about them, check their reliability statistics, and their setup.   
+All delegates are listed on the [delegate explorer](http://delegates.xcash.tech/delegates). Take time to get to learn more about them, check their reliability statistics, and their setup.   
 You will find 3 types of delegates:
 
 * **Shared Delegates**: The shared delegates are public delegates for whom you can vote. They will redistribute your share of the rewards minus their fees. As a voter, you should favor shared delegates.
@@ -20,7 +20,7 @@ You will find 3 types of delegates:
 * **Private group**: Private delegates group are delegates that will only redistribute shares of the block reward to a select group of their voters. They are usually decided with the delegate in private, so you shouldn't vote for them if you haven't communicated with the delegate first.
 
 {% hint style="danger" %}
-The [delegate explorer](http://delegates.xcash.foundation/delegates)'s information is filled by the delegates. There are currently no checks to the veracity of the information provided. It is your duty to make sure that a delegate is trustworthy, that he will redistribute the reward and that the fees displayed are correct.
+The [delegate explorer](http://delegates.xcash.tech/delegates)'s information is filled by the delegates. There are currently no checks to the veracity of the information provided. It is your duty to make sure that a delegate is trustworthy, that he will redistribute the reward and that the fees displayed are correct.
 {% endhint %}
 
 {% hint style="info" %}
@@ -31,7 +31,7 @@ Most if not all delegates are discussing freely on X-Cash official Discord serve
 
 You can calculate your expected ROI depending on several factor to help you with your vote.
 
-A simple ROI-Calculator is available here [calculator.xcash.foundation](https://calculator.xcash.foundation/); there you can see how much rewards you can possibly earn by staking XCASH.
+A simple ROI-Calculator is available here [calculator.xcash.tech](https://calculator.xcash.tech/); there you can see how much rewards you can possibly earn by staking XCASH.
 
 Community member and delegate **UrsaMajor** is providing a comprehensive list of delegates to help you understand and calculate what reward you can expect by voting with your XCASH. 
 
@@ -50,7 +50,7 @@ There is a couple of rules to observe when voting:
 
 You can view the staked and unstaked balance anytime by using the `balance` command
 
-To participate in the network, you will have to vote with your XCASH to elect a delegate that you see as trustworthy and you want to help to get a forging position. The DPOPS consensus has been designed so that the **XCASH you use to vote stays in your wallet, hence in your control** \(see [the challenge of voting in a privacy coin](https://docs.xcash.foundation/dpops/yellowpaper-delagated-proof-of-private-stake#the-challenges-of-staking-and-voting-in-a-privacy-coin)\).
+To participate in the network, you will have to vote with your XCASH to elect a delegate that you see as trustworthy and you want to help to get a forging position. The DPOPS consensus has been designed so that the **XCASH you use to vote stays in your wallet, hence in your control** \(see [the challenge of voting in a privacy coin](https://docs.xcash.tech/dpops/yellowpaper-delagated-proof-of-private-stake#the-challenges-of-staking-and-voting-in-a-privacy-coin)\).
 
 By voting for shared delegates, or within a private group after making an agreement with the delegate, you will receive a share of the block reward, which is a form of staking of your coins.
 
@@ -58,7 +58,7 @@ By voting for shared delegates, or within a private group after making an agreem
 
 #### Download the wallet program
 
-Download the 2.0.0 version of the X-Cash binaries, on our [official website](https://www.xcash.foundation/wallet) or on the [GitHub Releases](https://github.com/X-CASH-official/xcash-core/releases/tag/2.0.0).
+Download the 2.0.0 version of the X-Cash binaries, on our [official website](https://www.xcash.tech/wallet) or on the [GitHub Releases](https://github.com/xcash-tech/xcash-core/releases/tag/2.0.0).
 
 {% hint style="info" %}
 Before running the wallet binaries, it is recommended to allow the X-Cash binaries folder in your firewall. Windows mistakenly picks up the executable as dangerous.
@@ -103,17 +103,17 @@ Once your terminal is windows is located in the wallet binaries, you can run the
 {% hint style="info" %}
 During the registration period, you can chose from one of the following trusted daemon address:
 
-`us1.xcash.foundation:18281  
-europe1.xcash.foundation:18281  
-europe2.xcash.foundation:18281  
-europe3.xcash.foundation:18281  
-oceania1.xcash.foundation:18281`
+`us1.xcash.tech:18281  
+europe1.xcash.tech:18281  
+europe2.xcash.tech:18281  
+europe3.xcash.tech:18281  
+oceania1.xcash.tech:18281`
 {% endhint %}
 
 _Example:_ 
 
 ```text
-./xcash-wallet-cli.exe --daemon-address us1.xcash.foundation:18281
+./xcash-wallet-cli.exe --daemon-address us1.xcash.tech:18281
 ```
 
 You will be able to open a wallet file if you have one and let it synchronize the last block. If you don't have a wallet file, or wish to restore a wallet, follow the instructions below. If your wallet is synchronized, you can go to the **prepare your vote** section.
@@ -135,7 +135,7 @@ cd C:/your-path-to-xcash-binaries
 Once your terminal is windows is located in the wallet binaries, you can run the CLI wallet with the following parameter:
 
 ```text
-./xcash-wallet-cli.exe --restore-deterministic-wallet --daemon-address us1.xcash.foundation:18281
+./xcash-wallet-cli.exe --restore-deterministic-wallet --daemon-address us1.xcash.tech:18281
 ```
 
 You will be then prompted to give your wallet mnemonic seed and a new password. Once entered, your wallet will synchronize blocks with the remote node. It could take a while as a newly created wallet needs to scan all the blocks until the last one. 
@@ -174,7 +174,7 @@ To vote, it's quite easy. Use the **`vote`** command:
 vote <delegates_public_address|delegates_name> <amount | "all">
 ```
 
-You can either put the **`<delegates_public_address>`** which is a standard XCASH public address, or the **`<delegate_name>`**. This information is available on the [delegate explorer](http://delegates.xcash.foundation/).
+You can either put the **`<delegates_public_address>`** which is a standard XCASH public address, or the **`<delegate_name>`**. This information is available on the [delegate explorer](http://delegates.xcash.tech/).
 
 The wallet will create a **reserve proof** with the staked amount you provided of the wallet (or the full balance if you set it to all and assign it to the designated delegate. Once your vote has been casted, you will have to **wait with your wallet running** until the **top of hour** before getting a success message.
 
@@ -196,7 +196,7 @@ _Voting with Android wallet instructions made by Aquila-Audax 🙏_
 Please be aware that the Android wallet is still in Beta so, be careful using it and save always in a secure place a backup of your public and private view/spend keys and/or the mnemonic seed. If this info is lost, there will be no way to restore it if necessary!
 {% endhint %}
 
-Download the wallet on your compatible android phone using the following link : [https://github.com/X-CASH-official/android-wallet/releases/tag/v1.1.0-beta](https://github.com/X-CASH-official/android-wallet/releases/tag/v1.1.0-beta)
+Download the wallet on your compatible android phone using the following link : [https://github.com/xcash-tech/android-wallet/releases/tag/v1.1.0-beta](https://github.com/xcash-tech/android-wallet/releases/tag/v1.1.0-beta)
 
 In case you have already generated a wallet, voting from the Android X-Cash Wallet APP is a very simple process.
 

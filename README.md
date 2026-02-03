@@ -5,13 +5,10 @@ description: >-
   an elected delegate.
 ---
 
-# Welcome 👋
-
-![](.gitbook/assets/header.png)
 
 ## About
 
-The **X-Cash Foundation is an open-source, no-ICO blockchain project** launched in 2018 developing a privacy centered cryptocurrency inheriting from Monero and bringing new innovation in the privacy coin space.
+The **X-Cash Tech is an open-source, no-ICO blockchain project** launched in 2018 developing a privacy centered cryptocurrency inheriting from Monero and bringing new innovation in the privacy coin space.
 
 X-Cash main features are: 
 
@@ -19,7 +16,7 @@ X-Cash main features are:
 * **Delegated-Proof-of-Private-Stake - X-Cash custom consensus designed for privacy coins** X-Cash consensus model gets rid of the decentralized yet unsustainable PoW consensus to propose its own variation of a DPoS with DBFT consensus. 
 * **Sidechains - The next step in blockchain hosting** X-Cash will make it easy to create and host your own blockchain, while being able to profit from X-Cash's unique features. 
 
-The document was written and aggregated by the X-Cash Foundation, the X-Cash development team and contributors. If you would like to learn more about contributing please the visit our [Github](https://github.com/X-CASH-official/) organization.
+The document was written and aggregated by the X-Cash Tech, the X-Cash development team and contributors. If you would like to learn more about contributing please the visit our [Github](https://github.com/xcash-tech/) organization.
 
 ## Get Started
 
@@ -39,10 +36,10 @@ Looking to use X-Cash but don't know where to start? Check our list of quick gui
 
 #### General links
 
-* [**X-Cash website** ](https://xcash.foundation)- The official website of the X-Cash project.
+* [**X-Cash website** ](https://xcash.tech)- The official website of the X-Cash project.
 * [**X-Cash official blog**](https://medium.com/x-cash) - Read about the latest development of X-Cash
-* [**X-Cash explorer** ](https://explorer.x-cash.org/Explorer)- See your ongoing transactions and explorer the X-CASH blockchain.
-* [**GitHub**](https://github.com/X-CASH-official) - The X-Cash source code and related repositories. 
+* [**X-Cash explorer** ](https://explorer.xcash.tech/Explorer)- See your ongoing transactions and explorer the X-CASH blockchain.
+* [**GitHub**](https://github.com/xcash-tech) - The X-Cash source code and related repositories. 
 * [**X-Network**](https://x-network.io) - Check everything about X-Cash related development from the founding team.
 * [**Help Center**](https://xcashteam.atlassian.net/servicedesk) - If you encounter a bug, or want to communicate on improvements.
 

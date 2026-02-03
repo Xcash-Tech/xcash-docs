@@ -120,7 +120,7 @@ And chose `option 4: Update/Install the blockchain`
 
 ### 3. Register as a delegate
 
-Now that your installation of the program is ready, you can [register yourself as a delegate](../dpops/register-delegate.md). Your information will be added to the [delegates' explorer](http://delegates.xcash.foundation/auth/tables/delegates) in the next minutes, and you will be ready to accept votes.
+Now that your installation of the program is ready, you can [register yourself as a delegate](../dpops/register-delegate.md). Your information will be added to the [delegates' explorer](http://delegates.xcash.tech/auth/tables/delegates) in the next minutes, and you will be ready to accept votes.
 
 {% hint style="info" %}
 Do not forget to update your [public information](../dpops/register-delegate.md#3-update-public-information).
@@ -142,7 +142,7 @@ If you find yourself having difficulties, don't hesitate to join the[ Discord ch
 
 ### 1. Download Binaries
 
-To vote with your XCASH, you will need to download the [beta version of the 2.0.0 binaries on GitHub](https://github.com/X-CASH-official/xcash-core/releases/tag/2.0.0-beta). Select the link relating to your Operating System and download the GitHub release. Unpack them in a folder \(preferably close to the **`root`** or **`C:/`** folder\).
+To vote with your XCASH, you will need to download the [beta version of the 2.0.0 binaries on GitHub](https://github.com/xcash-tech/xcash-core/releases/tag/2.0.0-beta). Select the link relating to your Operating System and download the GitHub release. Unpack them in a folder \(preferably close to the **`root`** or **`C:/`** folder\).
 
 ### **2. Synchronizing your wallet**
 
@@ -167,7 +167,7 @@ Then, run the xcash-wallet-cli.exe with the following option:
 ./xcash-wallet-cli.exe --restore-deterministic-wallet --daemon-address <daemon_address>
 ```
 
-And replace **`<daemon_address>`** with either **`europe1.xcash.foundation`** or **`us2.xcash.foundation`** depending on your location. You will be then prompted to restore your wallet. Insert the seed of your wallet and let it synchronize to the current height.
+And replace **`<daemon_address>`** with either **`europe1.xcash.tech`** or **`us2.xcash.tech`** depending on your location. You will be then prompted to restore your wallet. Insert the seed of your wallet and let it synchronize to the current height.
 
 **On Unix systems**
 
@@ -177,7 +177,7 @@ Open a terminal window and run the `xcash-wallet-cli` file with the following op
 /path_to_folder/xcash-wallet-cli --restore-deterministic-wallet --daemon-address <daemon_address>
 ```
 
-And replace **`<daemon_address>`** with either **`europe1.xcash.foundation`** or **`us2.xcash.foundation`** depending on your location. You will be then prompted to restore your wallet. Insert the seed of your wallet and let it synchronize to the current height.
+And replace **`<daemon_address>`** with either **`europe1.xcash.tech`** or **`us2.xcash.tech`** depending on your location. You will be then prompted to restore your wallet. Insert the seed of your wallet and let it synchronize to the current height.
 
 ### 3. Vote
 
@@ -194,7 +194,7 @@ Use the **`vote`** command:
 vote <delegates_public_address|delegates_name>
 ```
 
-You can either put the **`<delegates_public_address>`** which is a standard XCASH public address, or the **`<delegate_name>`**. This information is available on the [delegate explorer](http://delegates.xcash.foundation/).
+You can either put the **`<delegates_public_address>`** which is a standard XCASH public address, or the **`<delegate_name>`**. This information is available on the [delegate explorer](http://delegates.xcash.tech/).
 
 The wallet will create a **reserve proof** with the entirety of the wallet and assign it to the designated delegate. You will get a success message when your vote is taken into account.
 

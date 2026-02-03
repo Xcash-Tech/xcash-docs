@@ -36,7 +36,7 @@ Get the node's current height.
 * _untrusted_ - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted \(`true`\), or when the daemon is fully synced \(`false`\).
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/get_height -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/get_height -H 'Content-Type: application/json'
 {
   "height": 425000,
   "status": "OK",
@@ -86,7 +86,7 @@ Look up one or more transactions by hash.
 * _txs\_as\_json_ - json string; \(Optional - returned if set in inputs. Old compatibility parameter\) List of transaction as in _as\_json_ above:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/get_transactions -d '{"txs_hashes":["35f9dccaf21dfe1df0945ebfc8b3ef28977b4ea1a78b3726c9f866facd27f7ad"],"decode_as_json":true}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/get_transactions -d '{"txs_hashes":["35f9dccaf21dfe1df0945ebfc8b3ef28977b4ea1a78b3726c9f866facd27f7ad"],"decode_as_json":true}' -H 'Content-Type: application/json'
 {
   "status": "OK",
   "txs": [{
@@ -122,7 +122,7 @@ Get the known blocks hashes which are not on the main chain.
 ### Example :
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/get_alt_blocks_hashes -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/get_alt_blocks_hashes -H 'Content-Type: application/json'
 {
   "blks_hashes": ["9c2277c5470234be8b32382cdf8094a103aba4fcd5e875a6fc159dc2ec00e011","637c0e0f0558e284493f38a5fcca3615db59458d90d3a5eff0a18ff59b83f46f","6f3adc174a2e8082819ebb965c96a095e3e8b63929ad9be2d705ad9c086a6b1c","697cf03c89a9b118f7bdf11b1b3a6a028d7b3617d2d0ed91322c5709acf75625","d99b3cf3ac6f17157ac7526782a3c3b9537f89d07e069f9ce7821d74bd9cad0e","e97b62109a6303233dcd697fa8545c9fcbc0bf8ed2268fede57ddfc36d8c939c","70ff822066a53ad64b04885c89bbe5ce3e537cdc1f7fa0dc55317986f01d1788","b0d36b209bd0d4442b55ea2f66b5c633f522401f921f5a85ea6f113fd2988866"],
   "status": "OK",
@@ -149,7 +149,7 @@ Check if outputs have been spent using the key image associated with the output.
 ### Example :
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/is_key_image_spent -d '{"key_images":["8d1bd8181bf7d857bdb281e0153d84cd55a3fcaa57c3e570f4a49f935850b5e3","7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4"]}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/is_key_image_spent -d '{"key_images":["8d1bd8181bf7d857bdb281e0153d84cd55a3fcaa57c3e570f4a49f935850b5e3","7319134bfc50668251f5b899c66b005805ee255c136f0e1cecbb0f3a912e09d4"]}' -H 'Content-Type: application/json'
 {
   "spent_status": [1,2],
   "status": "OK"
@@ -184,7 +184,7 @@ Broadcast a raw transaction to the network.
 * _untrusted_ - boolean; States if the result is obtained using the bootstrap mode, and is therefore not trusted \(`true`\), or when the daemon is fully synced \(`false`\).
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/send_raw_transaction '{"tx_as_hex":"0200010200158b9c3dc885308d9024ec8302c2e5109ad803d3f801de53d21493738e1f90e701dc5e801302d8161a8105be042aa807cb560557a7d0d4898cc6fd0c0d35e77bcf839ba9b235ec3674bf00cb90f32a8b0200020b85f8bb5eae185399c32fee2ef11e3a10fed9b998280d9ef2161c70b1f353c50002417be46e074735ed3d5c7147aa472e9c14a401b9ebd58985d20e5f6eeb70e4d72101f27d6926626deaf4506c94ff24f0abe117dbd54c4f28da7a1b13047b6b2878a403fae733aa829ee9d1fc948e393f3d7368cb537e00290732c46adc46e441d2c275cdd606c19730f020ee0da02dbd90d4cd4ce7abac0413c8d51f21f7fea951a963cb33083359a00a3180d734589aec044d7d37278fb3f469fdde70156a8803df822a1e0f441426e7d933e18aeb25e58acc8e58b36d33927775501bbf1bbf32483a1ce00b21795f315cd231b11fe58e6c8407bb21d19250b91754a94606e73e12a88c7600115b5af4112e3830928dec18a552ecee1640ecdd7157f37b5fe9aeb83321c7c7010000004fda960fdb48fd706038d36af0e134ff6e770993295261af08feca3ef13394a32999b0ed41d8628b3d474a91fbec325cfef5ed11e8f3bd77e7d9a9a66e4adafc0385491182a5ef73957497f1dd3c2b680b8e63ad869efa209f43b6322770d58220ed31a3f7a9489535a75a88f9f06c5a63d1028a5b56e72e2ae152f15ac65e12e3bd1cc54f2a6bb8383c8850c29a525a30d5f99d41788fb5a7f5eef69244ec06820d2ec4507b4ca2d15970d063fc8e1edef757a647f225b865092295252ab10d07559ce962bab5b5317d9e5714b2423c7b2181fe989071f858dec30ecf1ab5e4430b8764c2a6f6190c9806563ae80090adf044d28316731f7e4e56a75dcee9e5640f27cf889413e22971496edacf434ea5dc1acee029be37f71c1531ccf5af45632f658a5406a6c0de9804fc12ccb40168f2dbddf7f086e58ac6acd79c868ef865f037cd75d072466b892df28812b4ad0c397b0dc1bc1b2ba6a924117f210851419a1f95fb63f88afdf1bdd52e1d65d010632b119bedbc2ea91ea99886bec9612047f4210c3b608edaf97ee6734a7cf22a6dde09c6a36b628f67f7058614f67444076003291b8df917842102167bbf28a9c6d074e68ecfc40ba55371355f2231b5363304836b9faf7fdeeb16f5739c05b310d434235044bf1216a242fcc6faeee198a12480283e8b438c02a3f0ff9cae741a1d4207c26799f0df255639d36ba3a0546f0e7017ca557ad680f77d5ff77ba434ae55db821c5579cf00d63185c1c477bee35e8a2cce838939b0e849182c486d8915f003f130f16d233f3f404ffac45f8436e80058e1b81ce3c3b326f57bd878d6b748914d670557353bca7f98d53fdf57782c65223aed33d0aeadc777120979ade3fb429b5a5486c967f4c2c63b5686a6a38cf329858f82b4d33be6df08419e97c1872a6c6191d5811b679d2827fb3306f9b634f7898b0207868c77e0a6033df229ec2ee28cd2c79ba01e49b67955300891e95765c53c25d3a7ceca2d4fab3944d30407797e01996d23b1ef2188bfd00662251c3f137bab02e4a831c47d722043ba4c780e5fa7d70e36968b7254b36d04ed82577fffb738086390eae9be1b800e8c19df14565ab13f4cda135220bf4a087604caa94cb26bf32ec920a2d19899b16c7d48acf285b80ebf412ed76b485f0c0b87cd272fe6fc80a82c98326397bcd408013113cbecca24ba03c36142ceb40d9d7b3ce7c9eeb71fa8c21e52cade31567c20acfa535250d1d95493c6f1e18902a5afbb5efc96a62b9d03a782536399f67a068c60d5b87144702debde82652c0f60e8298b66130176e39ef2dc754e11e498363b43a50655fc5d8a0ad07b93710d653e9ba5bda4772b2fef001990babfcaef513cb2b4f7dfc4d14cd79ca7cc6306545ac279b87a08dcedfabba270505fa6b60de12c29dd62d6bda33614e0ff6d00fd143259ae424d7a74b506b13cec4d16cd6519199862dfe2d768b6024c2a0703260e696f84a755b96272b314d2c9614c90ed4389beae781b9abed3801e047b042c5f6c1c7273737835b94c281766a7086692c339c9a18425cbc4060f1c1b9f0e3eab4bc3f891bc7c245aec18045eb0ed133acec748c390469470efc2f1a33c04f0879e027f878b7407ca7f42a847b180972d918d8eb2f8d06369d9dba6c5990b845ead58e131475206ff350764eebc4139f19d154eb08a7de8cb462f8d844f04f62a2548dd3db4810adf6cecbf310567e37c024e7f0593819b76c1c762b41c022a761c2dc9908e2dc478413ca6856b2436df96fc642e16766dfe531f19153c05923e3400b0f901194368f58bbcd3484fff84c470d883fc92568d8c3a7148aa07710fcfe514c713656dd14a088affafab9dede3a944690a4829d1a68e1edc7600c383de90edd1953fbf6a3c15e84ec051099748972b8f500e802ae4863bdde60240423a915ecec3eab9510d8aca86799400d8cd04e973f80d63431aeec1566d0240e744ba43acdb16c5b7207f42709f3880c2ac29610612bc182a81a85979ad0f4f2fdbc1c473910b9c3ae4266e72f84a08ccd566fa784d6da09d1666678eba0ad949d8c7bc57a81ba1b2fcff0fc5ecdacf42a04536fbac5293e27311aa5d0203fca71abb60ed9a6d0061855a6df3eb4a99dda032c3556a9dd4acffa42757230aa24d4cae9dae3e81e1e426ff8ae861691c08e62af5c9b7fee1bb589c98f42f0cc4ce92b77c6e4e5831cc7f1ea0e25dd5bcb9d348eee806867fc80345c2e0e80ff842faf0c679f972278112e2d12a6639229df57df429a49874ce2f419a60f801a50026424729413455372aa1adf14b8c33b194e91ec303a4448c4eadf9a1070d668c71c5b8bae28fbb4a7b6ee9924a351ddbd6cef575b5a68afcb0cd218d480861a3fa8dc4075acd9efa7909da095a030e2fc03be2400ae1a4e93778c0ca7f0ba4daf0f80c4308012f209d1ae36970ac8e70a17378ae981b8f12ea534948fe056b51a3dc4e2b69090d8dac19d80b00bf9f4f0a3d895e8df59c62c9eda4919e0e9080d32848a4b390b106ae3584c552b75719bd43bbeacb6632ba0938ecf5500998beae51b9993323ab0f9757f3b0c0495f5869d3b0baefac8fc41796290df30b8890f75a1d814329e26851c510cf8e8c4f38492638426491e05c68ad08c0480faf2f0713de768f50e4d98aeb16b6b40943bf4e59f872e8e97a3ff18efae11e0593af8a09401e3afbb43256e1514001c529bfa6b6b2ef1c0822baa5ede92c2c08a0464f4330811390bfe0e52bd296225b5ab0c232078961f2d27dc834b1f61c05b06f213c0623e4d924ff7e1658680ef61263b17a16b3730b2f007f1e01a39e00c7048f8bb0ad785c8f3b0e54f0453dc47f96103d4440cda66f6c508a251907034d7c051d328006bf561133f3f13972fdfc0ba2392baf6852bc106ffc7c2d3d0f9d487e464971ca43827b60cee910a5e51c81235c3b0c8fc217ccba75698f6a02aa5fba840617f4f412e288f90f3b5a26cee7ebe25d603b8d69ac4ee98e6e927d"}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/send_raw_transaction '{"tx_as_hex":"0200010200158b9c3dc885308d9024ec8302c2e5109ad803d3f801de53d21493738e1f90e701dc5e801302d8161a8105be042aa807cb560557a7d0d4898cc6fd0c0d35e77bcf839ba9b235ec3674bf00cb90f32a8b0200020b85f8bb5eae185399c32fee2ef11e3a10fed9b998280d9ef2161c70b1f353c50002417be46e074735ed3d5c7147aa472e9c14a401b9ebd58985d20e5f6eeb70e4d72101f27d6926626deaf4506c94ff24f0abe117dbd54c4f28da7a1b13047b6b2878a403fae733aa829ee9d1fc948e393f3d7368cb537e00290732c46adc46e441d2c275cdd606c19730f020ee0da02dbd90d4cd4ce7abac0413c8d51f21f7fea951a963cb33083359a00a3180d734589aec044d7d37278fb3f469fdde70156a8803df822a1e0f441426e7d933e18aeb25e58acc8e58b36d33927775501bbf1bbf32483a1ce00b21795f315cd231b11fe58e6c8407bb21d19250b91754a94606e73e12a88c7600115b5af4112e3830928dec18a552ecee1640ecdd7157f37b5fe9aeb83321c7c7010000004fda960fdb48fd706038d36af0e134ff6e770993295261af08feca3ef13394a32999b0ed41d8628b3d474a91fbec325cfef5ed11e8f3bd77e7d9a9a66e4adafc0385491182a5ef73957497f1dd3c2b680b8e63ad869efa209f43b6322770d58220ed31a3f7a9489535a75a88f9f06c5a63d1028a5b56e72e2ae152f15ac65e12e3bd1cc54f2a6bb8383c8850c29a525a30d5f99d41788fb5a7f5eef69244ec06820d2ec4507b4ca2d15970d063fc8e1edef757a647f225b865092295252ab10d07559ce962bab5b5317d9e5714b2423c7b2181fe989071f858dec30ecf1ab5e4430b8764c2a6f6190c9806563ae80090adf044d28316731f7e4e56a75dcee9e5640f27cf889413e22971496edacf434ea5dc1acee029be37f71c1531ccf5af45632f658a5406a6c0de9804fc12ccb40168f2dbddf7f086e58ac6acd79c868ef865f037cd75d072466b892df28812b4ad0c397b0dc1bc1b2ba6a924117f210851419a1f95fb63f88afdf1bdd52e1d65d010632b119bedbc2ea91ea99886bec9612047f4210c3b608edaf97ee6734a7cf22a6dde09c6a36b628f67f7058614f67444076003291b8df917842102167bbf28a9c6d074e68ecfc40ba55371355f2231b5363304836b9faf7fdeeb16f5739c05b310d434235044bf1216a242fcc6faeee198a12480283e8b438c02a3f0ff9cae741a1d4207c26799f0df255639d36ba3a0546f0e7017ca557ad680f77d5ff77ba434ae55db821c5579cf00d63185c1c477bee35e8a2cce838939b0e849182c486d8915f003f130f16d233f3f404ffac45f8436e80058e1b81ce3c3b326f57bd878d6b748914d670557353bca7f98d53fdf57782c65223aed33d0aeadc777120979ade3fb429b5a5486c967f4c2c63b5686a6a38cf329858f82b4d33be6df08419e97c1872a6c6191d5811b679d2827fb3306f9b634f7898b0207868c77e0a6033df229ec2ee28cd2c79ba01e49b67955300891e95765c53c25d3a7ceca2d4fab3944d30407797e01996d23b1ef2188bfd00662251c3f137bab02e4a831c47d722043ba4c780e5fa7d70e36968b7254b36d04ed82577fffb738086390eae9be1b800e8c19df14565ab13f4cda135220bf4a087604caa94cb26bf32ec920a2d19899b16c7d48acf285b80ebf412ed76b485f0c0b87cd272fe6fc80a82c98326397bcd408013113cbecca24ba03c36142ceb40d9d7b3ce7c9eeb71fa8c21e52cade31567c20acfa535250d1d95493c6f1e18902a5afbb5efc96a62b9d03a782536399f67a068c60d5b87144702debde82652c0f60e8298b66130176e39ef2dc754e11e498363b43a50655fc5d8a0ad07b93710d653e9ba5bda4772b2fef001990babfcaef513cb2b4f7dfc4d14cd79ca7cc6306545ac279b87a08dcedfabba270505fa6b60de12c29dd62d6bda33614e0ff6d00fd143259ae424d7a74b506b13cec4d16cd6519199862dfe2d768b6024c2a0703260e696f84a755b96272b314d2c9614c90ed4389beae781b9abed3801e047b042c5f6c1c7273737835b94c281766a7086692c339c9a18425cbc4060f1c1b9f0e3eab4bc3f891bc7c245aec18045eb0ed133acec748c390469470efc2f1a33c04f0879e027f878b7407ca7f42a847b180972d918d8eb2f8d06369d9dba6c5990b845ead58e131475206ff350764eebc4139f19d154eb08a7de8cb462f8d844f04f62a2548dd3db4810adf6cecbf310567e37c024e7f0593819b76c1c762b41c022a761c2dc9908e2dc478413ca6856b2436df96fc642e16766dfe531f19153c05923e3400b0f901194368f58bbcd3484fff84c470d883fc92568d8c3a7148aa07710fcfe514c713656dd14a088affafab9dede3a944690a4829d1a68e1edc7600c383de90edd1953fbf6a3c15e84ec051099748972b8f500e802ae4863bdde60240423a915ecec3eab9510d8aca86799400d8cd04e973f80d63431aeec1566d0240e744ba43acdb16c5b7207f42709f3880c2ac29610612bc182a81a85979ad0f4f2fdbc1c473910b9c3ae4266e72f84a08ccd566fa784d6da09d1666678eba0ad949d8c7bc57a81ba1b2fcff0fc5ecdacf42a04536fbac5293e27311aa5d0203fca71abb60ed9a6d0061855a6df3eb4a99dda032c3556a9dd4acffa42757230aa24d4cae9dae3e81e1e426ff8ae861691c08e62af5c9b7fee1bb589c98f42f0cc4ce92b77c6e4e5831cc7f1ea0e25dd5bcb9d348eee806867fc80345c2e0e80ff842faf0c679f972278112e2d12a6639229df57df429a49874ce2f419a60f801a50026424729413455372aa1adf14b8c33b194e91ec303a4448c4eadf9a1070d668c71c5b8bae28fbb4a7b6ee9924a351ddbd6cef575b5a68afcb0cd218d480861a3fa8dc4075acd9efa7909da095a030e2fc03be2400ae1a4e93778c0ca7f0ba4daf0f80c4308012f209d1ae36970ac8e70a17378ae981b8f12ea534948fe056b51a3dc4e2b69090d8dac19d80b00bf9f4f0a3d895e8df59c62c9eda4919e0e9080d32848a4b390b106ae3584c552b75719bd43bbeacb6632ba0938ecf5500998beae51b9993323ab0f9757f3b0c0495f5869d3b0baefac8fc41796290df30b8890f75a1d814329e26851c510cf8e8c4f38492638426491e05c68ad08c0480faf2f0713de768f50e4d98aeb16b6b40943bf4e59f872e8e97a3ff18efae11e0593af8a09401e3afbb43256e1514001c529bfa6b6b2ef1c0822baa5ede92c2c08a0464f4330811390bfe0e52bd296225b5ab0c232078961f2d27dc834b1f61c05b06f213c0623e4d924ff7e1658680ef61263b17a16b3730b2f007f1e01a39e00c7048f8bb0ad785c8f3b0e54f0453dc47f96103d4440cda66f6c508a251907034d7c051d328006bf561133f3f13972fdfc0ba2392baf6852bc106ffc7c2d3d0f9d487e464971ca43827b60cee910a5e51c81235c3b0c8fc217ccba75698f6a02aa5fba840617f4f412e288f90f3b5a26cee7ebe25d603b8d69ac4ee98e6e927d"}' -H 'Content-Type: application/json'
 {
   "double_spend": false,
   "fee_too_low": false,
@@ -221,7 +221,7 @@ Start mining on the daemon.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/start_mining -d '{"do_background_mining":false,"ignore_battery":true,"miner_address":"XCA1kzoR3ZLNg5zxNmxrY8FYKtgEvPZqC2xoRpm1axCpQcrrZfoKTSkSNsASDspdt3j1WcEnQJyuuB5VPSB56WWy36A4sQtQhe","threads_count":1}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/start_mining -d '{"do_background_mining":false,"ignore_battery":true,"miner_address":"XCA1kzoR3ZLNg5zxNmxrY8FYKtgEvPZqC2xoRpm1axCpQcrrZfoKTSkSNsASDspdt3j1WcEnQJyuuB5VPSB56WWy36A4sQtQhe","threads_count":1}' -H 'Content-Type: application/json'
 {
   "status": "OK"
 }
@@ -242,7 +242,7 @@ Stop mining on the daemon.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/stop_mining -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/stop_mining -H 'Content-Type: application/json'
 {
   "status": "OK"
 }
@@ -266,7 +266,7 @@ Get the mining status of the daemon.
 * _threads\_count_ - unsigned int; Number of running mining threads.
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/get_height -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/get_height -H 'Content-Type: application/json'
 {
   "active": true,
   "address": "XCA1kzoR3ZLNg5zxNmxrY8FYKtgEvPZqC2xoRpm1axCpQcrrZfoKTSkSNsASDspdt3j1WcEnQJyuuB5VPSB56WWy36A4sQtQhe",
@@ -292,7 +292,7 @@ Save the blockchain. The blockchain does not need saving and is always saved whe
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/get_height -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/get_height -H 'Content-Type: application/json'
 {
   "status": "OK"
 }
@@ -320,7 +320,7 @@ Get the known peers list.
 ### Example \(truncated lists\):
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/get_height -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/get_height -H 'Content-Type: application/json'
 {
   "gray_list": [{
     "host": "640304833",
@@ -371,7 +371,7 @@ Set the log hash rate display mode.
 ### Example while mining:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/set_log_hash_rate -d '{"visible":true}' -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/set_log_hash_rate -d '{"visible":true}' -H 'Content-Type: application/json'
 {
   "status": "OK"
 }
@@ -380,7 +380,7 @@ $ curl -X POST http://EUSEED1.x-cash.org:18281/set_log_hash_rate -d '{"visible":
 ### Error while not mining:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/set_log_level -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/set_log_level -H 'Content-Type: application/json'
 {
   "status": "OK"
 }
@@ -478,7 +478,7 @@ Set the daemon log categories. Categories are represented as a comma separated l
 ### Example to set all facilities to Security Level `Info`:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/set_log_categories -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/set_log_categories -H 'Content-Type: application/json'
 
 {
   "categories": "*:INFO",
@@ -816,7 +816,7 @@ Send a command to the daemon to safely disconnect and shut down.‌
 ### Example: <a id="example"></a>
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/stop_daemon -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/stop_daemon -H 'Content-Type: application/json'
 {
   "status": "OK"
 }
@@ -849,7 +849,7 @@ Get daemon bandwidth limits.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/get_limit -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/get_limit -H 'Content-Type: application/json'
 {
   "limit_down": 8192,
   "limit_up": 128,
@@ -878,7 +878,7 @@ Set daemon bandwidth limits.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/set_limit -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/set_limit -H 'Content-Type: application/json'
 {
   "limit_down": 1024,
   "limit_up": 128,
@@ -903,7 +903,7 @@ Limit number of Outgoing peers.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/out_peers -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/out_peers -H 'Content-Type: application/json'
 {
   "status": "OK"
 }
@@ -926,7 +926,7 @@ Limit number of Incoming peers.
 ### Example:
 
 ```bash
-$ curl -X POST http://EUSEED1.x-cash.org:18281/in_peers -H 'Content-Type: application/json'
+$ curl -X POST http://EUSEED1.xcash.tech:18281/in_peers -H 'Content-Type: application/json'
 {
   "status": "OK"
 }

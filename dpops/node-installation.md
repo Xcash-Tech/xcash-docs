@@ -24,7 +24,7 @@ The `xcash-dpops` program is used to manage the block validation, communicate wi
 In the first beta version, X-Cash's DPoPS will only run on a Linux/Unix OS. **We recommend installing it on a Ubuntu VPS/dedicated server \(18.04\) for the best compatibility.**
 {% endhint %}
 
-The delegate node will need to transit a lot of information, notably messages to the other delegates to verify the block information, As time goes by, the features and information that the delegates handle will increase \(notably when the X-Cash Foundation will add **token creation**, **NFT**, **sidechains**, **smart contracts,** and other exciting features ⭐\).
+The delegate node will need to transit a lot of information, notably messages to the other delegates to verify the block information, As time goes by, the features and information that the delegates handle will increase \(notably when the X-Cash Tech will add **token creation**, **NFT**, **sidechains**, **smart contracts,** and other exciting features ⭐\).
 
 {% hint style="info" %}
 The recommended system requirement is designed to be **future-development proof**, meaning that a hardware update should never be needed and still comfortably handle the **`xcash-dpops`** program.
@@ -64,7 +64,7 @@ The following table summarizes the tools and libraries required to run **`xcash-
 | **Git** | any | `git` |
 | **MongoDB** | 4.0.3 | Install from [binaries](https://www.mongodb.com/download-center/community) |
 | **MongoDB C Driver** \(includes BSON library\) | 1.13.1 | Build from [source](https://github.com/mongodb/mongo-c-driver/releases/) |
-| **xcash-core** | Latest version | [download the latest release](https://github.com/X-CASH-official/X-CASH/releases) or [build from source](https://github.com/X-CASH-official/X-CASH#compiling-x-cash-from-source) |
+| **xcash-core** | Latest version | [download the latest release](https://github.com/xcash-tech/X-CASH/releases) or [build from source](https://github.com/xcash-tech/X-CASH#compiling-x-cash-from-source) |
 
 ### Time Synchronization
 
@@ -89,7 +89,7 @@ systemctl restart systemd-timesyncd
 
 The **Installer Script** has been designed to easily interact with the **`xcash-dpops`** program and provide easy steps for installation and updates. You can also use this script to restart the programs if you are not comfortable with the command-line interface.
 
-To run the latest version of the installer script, run the following command that will fetch the **`autoinstaller.sh`** script from the official [xcash-dpops](https://github.com/X-CASH-official/xcash-dpops) repository:
+To run the latest version of the installer script, run the following command that will fetch the **`autoinstaller.sh`** script from the official [xcash-dpops](https://github.com/xcash-tech/xcash-dpops) repository:
 
 ```bash
 bash -c "$(curl -sSL https://raw.githubusercontent.com/X-CASH-official/xcash-dpops/master/scripts/autoinstaller/autoinstaller.sh)"
@@ -138,7 +138,7 @@ You will be then asked if you want to configure the **`xcash-dpops`** program as
 **Shared Delegates** - Rely on the vote of others to be elected into the top 50 and get a forging position. By choosing the shared delegates options, the program will configure your node to automatically retribute your voters. Later, when configuring your node, you will be able to chose a **private group**. This option enables you to choose which voters you decide to retribute. This option should be preferred if you are running a delegate node with a close group of people. You can configurate a private group in the [Register delegate section](register-delegate.md#3-private-group).
 
 {% hint style="info" %}
-If you wish to run a shared delegate node, you will have to[ prefund the delegate wallet](https://docs.xcash.foundation/dpops/register-delegate#4-prepare-shared-delegate-payments) to ensure that the first block reward payments can be sent without issue.
+If you wish to run a shared delegate node, you will have to[ prefund the delegate wallet](https://docs.xcash.tech/dpops/register-delegate#4-prepare-shared-delegate-payments) to ensure that the first block reward payments can be sent without issue.
 {% endhint %}
 
 **Solo Delegates** - In some cases, delegates who owns a consequent amount of XCASH can be "elected" in the top 50 by voting for themselves. They don't need to setup fees as the block reward will be distributed to the delegate wallet. Solo delegates have to manually empty the delegate wallet and send the block reward to the wallet of their choice.

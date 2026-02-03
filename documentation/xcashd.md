@@ -32,11 +32,11 @@ To provide a better reliability and trust, the team has setup a several public r
 
 | Name | Location |
 | :--- | :--- |
-| **usseed1.x-cash.org:18281** | US - Oregon |
-| **usseed2.x-cash.org:18281** | US - Virginia |
-| **euseed1.x-cash.org:18281** | Europe - Germany |
-| **euseed3.x-cash.org:18281** | Europe - France |
-| **asiaseed2.x-cash.org:18281** | Asia - Singapore |
+| **usseed1.xcash.tech:18281** | US - Oregon |
+| **usseed2.xcash.tech:18281** | US - Virginia |
+| **euseed1.xcash.tech:18281** | Europe - Germany |
+| **euseed3.xcash.tech:18281** | Europe - France |
+| **asiaseed2.xcash.tech:18281** | Asia - Singapore |
 
 ## Syntax
 
@@ -369,7 +369,7 @@ See running for example usage. You can also type commands directly in the consol
 | `exit`, `stop_daemon` | Ask daemon to exit gracefully. The `exit` and `stop_daemon` are identical \(one is alias of the other\). |  |
 | \`set\_log  | &lt;{+,-,}categories&gt;\` | Set the current log level/categories where `<level>` is a number 0-4 |
 | `print_status` | Show if daemon is running. |  |
-| \`update \(check | download\)\` | Check if update is available and optionally download it. The hash is SHA-256. On linux use `sha256sum` to verify. Example output: `Update available: v0.13.0.4: https://downloads.getxcash.org/cli/xcash-linux-x64-v0.13.0.4.tar.bz2, hash 693e1a0210201f65138ace679d1ab1928aca06bb6e679c20d8b4d2d8717e50d6` `Update downloaded to: /opt/xcash-v0.13.0.2/xcash-linux-x64-v0.13.0.4.tar.bz2` |
+| \`update \(check | download\)\` | Check if update is available and optionally download it. The hash is SHA-256. On linux use `sha256sum` to verify. Example output: `Update available: v0.13.0.4: https://downloads.xcash.tech/cli/xcash-linux-x64-v0.13.0.4.tar.bz2, hash 693e1a0210201f65138ace679d1ab1928aca06bb6e679c20d8b4d2d8717e50d6` `Update downloaded to: /opt/xcash-v0.13.0.2/xcash-linux-x64-v0.13.0.4.tar.bz2` |
 
 ### **Mining**
 

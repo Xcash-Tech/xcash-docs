@@ -63,7 +63,7 @@ The following table summarizes the tools and libraries required to run X-Cash's 
 | **Git** | any | `git` |
 | **MongoDB** | 4.0.3 | Install from [binaries](https://www.mongodb.com/download-center/community) |
 | **MongoDB C Driver** \(includes BSON libary\) | 1.13.1 | Build from [source](https://github.com/mongodb/mongo-c-driver/releases/) |
-| **xcash-core** | Latest version | [download the latest release](https://github.com/X-CASH-official/X-CASH/releases) or [build from source](https://github.com/X-CASH-official/X-CASH#compiling-x-cash-from-source) |
+| **xcash-core** | Latest version | [download the latest release](https://github.com/xcash-tech/X-CASH/releases) or [build from source](https://github.com/xcash-tech/X-CASH#compiling-x-cash-from-source) |
 
 ### Time Synchronization
 
@@ -104,7 +104,7 @@ systemd-timesyncd.service active: yes
 
 The Installer Script has been designed to easily interact with the **`xcash-dpops`** program and provide easy steps for installation and update. You can also use this script to restart the programs if you are not confortable with the command line interface. 
 
-To display the setting menu, run the following command that will fetch the `autoinstaller.sh` script from the official [xcash-dpops](https://github.com/X-CASH-official/xcash-dpops) repository:
+To display the setting menu, run the following command that will fetch the `autoinstaller.sh` script from the official [xcash-dpops](https://github.com/xcash-tech/xcash-dpops) repository:
 
 ```bash
 bash -c "$(curl -sSL https://raw.githubusercontent.com/X-CASH-official/xcash-dpops/master/scripts/autoinstaller/autoinstaller.sh)"
@@ -271,7 +271,7 @@ sudo apt update -y && sudo apt upgrade -y
 sudo apt install build-essential cmake pkg-config libssl-dev git -y
 ```
 
-If you want to install [`xcash-core`](https://github.com/X-CASH-official/xcash-core) from source, you will need to install these [additionnal packages](https://github.com/X-CASH-official/xcash-core#dependencies). 
+If you want to install [`xcash-core`](https://github.com/xcash-tech/xcash-core) from source, you will need to install these [additionnal packages](https://github.com/xcash-tech/xcash-core#dependencies). 
 
 ```bash
 sudo apt install libboost-all-dev libzmq3-dev libunbound-dev libsodium-dev libminiupnpc-dev libunwind8-dev liblzma-dev libreadline6-dev libldns-dev libexpat1-dev libgtest-dev doxygen graphviz libpcsclite-dev screen p7zip-full -y
@@ -348,7 +348,7 @@ sudo ldconfig
 Clone the `xcash-core` repository to your installation folder and go to the downloaded folder:
 
 ```bash
-cd ~/xcash-official/ && git clone https://github.com/X-CASH-official/xcash-core.git
+cd ~/xcash-official/ && git clone https://github.com/xcash-tech/xcash-core.git
 cd xcash-core
 ```
 
@@ -366,7 +366,7 @@ Once the build finishes, the binaries will be  located in  `~/xcash-official/xca
 At this point, all the dependencies shoud be installed and built. First, clone the **`xcash-dpops`** repository:
 
 ```bash
-cd ~/xcash-official/ && git clone https://github.com/X-CASH-official/xcash-dpops.git
+cd ~/xcash-official/ && git clone https://github.com/xcash-tech/xcash-dpops.git
 ```
 
 Go into the downloaded folder, and build using `make`: 

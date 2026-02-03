@@ -11,7 +11,7 @@ This tutorial will act as a guide for step-by-step process to understand and use
 We are mentioning here **WXCASH** to talk about any wrapped token represensation of XCASH, being on Polygon and Ethereum network. In this guide, we will make the differentiation with the following pattern: **`Coin Name (Network)`**. You will see:
 
 * **XCASH \(X-Cash\):** This is the XCASH coins interacting on the X-Cash network. This is the basic network, governed through the DPOPS consensus and validated by 50 delegates.
-* **WXCASH \(Polygon\):** This is an ERC20 token representing a wrapped version of XCASH on the Polygon \(Matic\) Network. This is the version of the wrapped coin you will have after performing a swap on the [X-Bank](https://x-bank.io/), the X-Cash Foundation managed wallet.  _Contract address:_  [_0x03678f2c2c762dc63c2bb738c3a837d366eda560_](https://polygonscan.com/token/0x03678f2c2c762dc63c2bb738c3a837d366eda560)\_\_
+* **WXCASH \(Polygon\):** This is an ERC20 token representing a wrapped version of XCASH on the Polygon \(Matic\) Network. This is the version of the wrapped coin you will have after performing a swap on the [X-Bank](https://x-bank.io/), the X-Cash Tech managed wallet.  _Contract address:_  [_0x03678f2c2c762dc63c2bb738c3a837d366eda560_](https://polygonscan.com/token/0x03678f2c2c762dc63c2bb738c3a837d366eda560)\_\_
 * **WXCASH \(Ethereum\):** ERC20 token on the root chain \(Ethereum\). As the WXCASH \(Polygon\) is running on a child chain on Polygon, you need to use the PoS Polygon Bridge to withdraw them on the Ethereum network. ****_Contract address:_ [_0x235328f864f38a91f0d2282159ea7c7b7c9f7c62_](https://etherscan.io/token/0x235328f864f38a91f0d2282159ea7c7b7c9f7c62)\_\_
 
 {% hint style="info" %}
