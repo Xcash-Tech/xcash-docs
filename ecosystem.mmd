@@ -1,0 +1,26 @@
+flowchart LR
+  user["Users & businesses"] --> wallet["X-Wallet"]
+  legacy["Legacy X-Cash chain (migration)"] -.->|Claim / snapshot| wallet
+
+  subgraph L1["Privacy-first Layer 1"]
+    l1["X-Cash L1 network"]
+    delegates["Delegates (DPoPS)"]
+    governance["Staking & governance"]
+    delegates -->|Block production + BFT verification| l1
+    l1 --> governance
+    governance -->|Voting signals| delegates
+  end
+
+  subgraph EVM["EVM ecosystem"]
+    base["Base (ERC-20)"]
+    dapps["DeFi & dApps"]
+    base --> dapps
+  end
+
+  wallet -->|FlexPrivacy transactions| l1
+  wallet -->|Migration / bridge| base
+  base -->|Bridge to native XCASH| l1
+
+  explorer["X-Plorer"] <-->|Read-only explorer| l1
+  wallet --> quest["X-Quest"]
+  wallet --> payment["X-Payment (in development)"]
