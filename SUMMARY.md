@@ -2,12 +2,6 @@
 
 * [Welcome](README.md)
 
-## API
-
-* [Get Started](api/get-started.md)
-* [Blockchain](api/blockchain.md)
-* [DPOPS](api/dpops.md)
-
 ## Applications & Tools <a href="#applications" id="applications"></a>
 
 * [Interacting with the network](applications/xcashd.md)
@@ -36,3 +30,10 @@
 ## Library
 
 * [Yellowpaper - Hybrid Transactions](library/yellowpaper-hybrid-transactions.md)
+
+## Archive
+
+* API (legacy)
+  * [Get Started](api/get-started.md)
+  * [Blockchain](api/blockchain.md)
+  * [DPOPS](api/dpops.md)
