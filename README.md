@@ -152,12 +152,6 @@ Tip: the full documentation navigation is in [SUMMARY.md](SUMMARY.md).
 * Reddit: [reddit.com/r/xcash](https://www.reddit.com/r/xcash)
 * Explorer: [xplorer.xcash.tech](https://xplorer.xcash.tech)
 
-## Contributing
-
-Docs improvements, fixes, and updates are welcome.
-
-* Contribution guidelines: [contribute/guidelines.md](contribute/guidelines.md)
-* Bug bounty program: [contribute/bug-bounty-program.md](contribute/bug-bounty-program.md)
 
 ## Repository scope
 
