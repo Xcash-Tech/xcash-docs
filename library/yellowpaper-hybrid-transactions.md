@@ -1,5 +1,5 @@
 ---
-description: 'Paper version: https://x-network.io/whitepaper/XCASH_Yellowpaper_Hybrid-tx.pdf'
+description: 'Paper version: https://uploads-ssl.webflow.com/5f5f5f0330588e2883713b14/60367481e1bbe27fc013d5ca_XCASH_Yellowpaper_DPoPS.pdf'
 ---
 
 # Yellowpaper - Hybrid Transactions
