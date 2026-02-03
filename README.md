@@ -45,8 +45,6 @@ X-Cash is intentionally packaged as a set of user-facing products on top of a pr
 
 ### Ecosystem map
 
-Tip: if you use a Mermaid preview tool in VS Code, preview [ecosystem.mmd](ecosystem.mmd) (it contains plain Mermaid code). Some Mermaid previewers may try to parse the entire README (including the YAML frontmatter at the top) as a diagram.
-
 ```mermaid
 flowchart LR
   user["Users & businesses"] --> wallet["X-Wallet"]
@@ -74,6 +72,7 @@ flowchart LR
   explorer["X-Plorer"] <-->|Read-only explorer| l1
   wallet --> quest["X-Quest"]
   wallet --> payment["X-Payment (in development)"]
+  
 ```
 
 ### X-Wallet
