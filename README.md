@@ -12,12 +12,12 @@ X-Cash is a privacy-focused crypto ecosystem founded in **2018**. This repositor
 
 **Quick links**
 
-* Website: https://xcash.tech
-* Migration portal: https://xcash.tech/migration
-* Roadmap: https://xcash.tech/roadmap
-* X-Wallet (web): https://xwallet.xcash.tech
-* Explorer (X-Plorer): https://xplorer.xcash.tech
-* GitHub org: https://github.com/xcash-tech
+* Website: [xcash.tech](https://xcash.tech)
+* Migration portal: [xcash.tech/migration](https://xcash.tech/migration)
+* Roadmap: [xcash.tech/roadmap](https://xcash.tech/roadmap)
+* X-Wallet (web): [xwallet.xcash.tech](https://xwallet.xcash.tech)
+* Explorer (X-Plorer): [xplorer.xcash.tech](https://xplorer.xcash.tech)
+* GitHub org: [github.com/xcash-tech](https://github.com/xcash-tech)
 
 ## What X-Cash is building
 
@@ -45,7 +45,7 @@ X-Cash is intentionally packaged as a set of user-facing products on top of a pr
 
 ### Ecosystem map
 
-Tip: if you use a Mermaid preview tool in VS Code, preview [ecosystem.mmd](ecosystem.mmd). Some Mermaid previewers may try to parse the entire README (including the YAML frontmatter at the top) as a diagram.
+Tip: if you use a Mermaid preview tool in VS Code, preview [ecosystem.mmd](ecosystem.mmd) (it contains plain Mermaid code). Some Mermaid previewers may try to parse the entire README (including the YAML frontmatter at the top) as a diagram.
 
 ```mermaid
 flowchart LR
@@ -80,7 +80,7 @@ flowchart LR
 
 X-Wallet is the primary interface of the ecosystem: a non-custodial browser wallet designed to make sending and managing assets understandable for non-technical users. It includes a privacy toggle, staking interface, and access to migration flows.
 
-* Web wallet: https://xwallet.xcash.tech
+* Web wallet: [xwallet.xcash.tech](https://xwallet.xcash.tech)
 
 ### Privacy & transactions (FlexPrivacy)
 
@@ -101,8 +101,8 @@ X-Payment is a payment system in development focused on real commerce: mobile-fi
 
 ### Supporting apps
 
-* X-Plorer (explorer): https://xplorer.xcash.tech
-* X-Quest (community): https://xquest.xcash.tech
+* X-Plorer (explorer): [xplorer.xcash.tech](https://xplorer.xcash.tech)
+* X-Quest (community): [xquest.xcash.tech](https://xquest.xcash.tech)
 
 ## Migration to the new X-Cash network (in progress)
 
@@ -116,7 +116,7 @@ High-level flow (see the official page for the latest details and timing):
 4. **Swap Base tokens → native XCASH on the new L1** via the built-in bridge to unlock full L1 features (privacy, staking, governance).
 5. **Polygon WXCASH holders** can swap to the new Base token via X-Wallet.
 
-Read the full process + FAQ: https://xcash.tech/migration
+Read the full process + FAQ: [xcash.tech/migration](https://xcash.tech/migration)
 
 ## Roadmap (where we’re headed)
 
@@ -126,7 +126,7 @@ The roadmap describes the project’s direction across three horizons:
 * **Mid-term (Scaling & Expansion):** higher-throughput scaling (zk-rollup L2), smart-contract sidechains, privacy-preserving DeFi primitives, and delegate performance tooling.
 * **Long-term (Ecosystem maturity):** cross-chain swap protocol, expanded mobile wallet experiences, privacy-preserving NFTs, and additional privacy-first applications.
 
-Latest roadmap status: https://xcash.tech/roadmap
+Latest roadmap status: [xcash.tech/roadmap](https://xcash.tech/roadmap)
 
 ## Get started
 
@@ -134,8 +134,8 @@ Use the table below to jump straight to what you need.
 
 | What are you looking for? | Where to start |
 | :--- | :--- |
-| **I need to migrate legacy XCASH / WXCASH.** | Use the official migration guide: https://xcash.tech/migration |
-| **I want to use a wallet.** | Web wallet: https://xwallet.xcash.tech • CLI wallet docs: [applications/xcash-wallet-cli.md](applications/xcash-wallet-cli.md) |
+| **I need to migrate legacy XCASH / WXCASH.** | Use the official [migration guide](https://xcash.tech/migration) |
+| **I want to use a wallet.** | Web wallet: [xwallet.xcash.tech](https://xwallet.xcash.tech) • CLI wallet docs: [applications/xcash-wallet-cli.md](applications/xcash-wallet-cli.md) |
 | **I want to connect to the network and run a node.** | Daemon documentation: [applications/xcashd.md](applications/xcashd.md) |
 | **I want to stake / vote.** | Start here: [dpops/vote-and-staking.md](dpops/vote-and-staking.md) |
 | **I want to become a delegate.** | Delegate guides: [dpops/get-started.md](dpops/get-started.md) and [dpops/server-setup.md](dpops/server-setup.md) |
@@ -147,11 +147,11 @@ Tip: the full documentation navigation is in [SUMMARY.md](SUMMARY.md).
 
 ## Community & support
 
-* Discord: https://discord.gg/2bm4UuqYZT
-* X (Twitter): https://x.com/XcashTech
-* Telegram: https://t.me/xcashtech
-* Reddit: https://www.reddit.com/r/xcash
-* Explorer: https://xplorer.xcash.tech
+* Discord: [discord.gg/2bm4UuqYZT](https://discord.gg/2bm4UuqYZT)
+* X (Twitter): [x.com/XcashTech](https://x.com/XcashTech)
+* Telegram: [t.me/xcashtech](https://t.me/xcashtech)
+* Reddit: [reddit.com/r/xcash](https://www.reddit.com/r/xcash)
+* Explorer: [xplorer.xcash.tech](https://xplorer.xcash.tech)
 
 ## Contributing
 
@@ -164,5 +164,5 @@ Docs improvements, fixes, and updates are welcome.
 
 This repository contains documentation. For source code and releases, see the GitHub organization:
 
-* https://github.com/xcash-tech
+* [github.com/xcash-tech](https://github.com/xcash-tech)
 
